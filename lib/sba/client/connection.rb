@@ -1,5 +1,5 @@
 require 'faraday_middleware'
-require 'faraday/response/raise_error'
+Dir[File.expand_path('../../../faraday/*.rb', __FILE__)].each{|file| require file}
 
 module SBA
   class Client
