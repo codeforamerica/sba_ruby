@@ -1,7 +1,7 @@
 --- 
 RSpec: 
   :original_result: 
-    /Users/danielmelton/Documents/development/railsapps/sba_ruby/lib/sba.rb: 
+    /Users/ryanresella/projects/sba_ruby/lib/sba.rb: 
     - 1
     - 1
     - 1
@@ -12,199 +12,256 @@ RSpec:
     - 
     - 
     - 
+    - 1
+    - 3
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    /Users/ryanresella/projects/sba_ruby/lib/sba/configuration.rb: 
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 18
+    - 
+    - 
+    - 1
+    - 3
+    - 3
+    - 3
+    - 3
+    - 3
+    - 
+    - 
+    - 
+    /Users/ryanresella/projects/sba_ruby/lib/sba/client.rb: 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 3
+    - 3
+    - 15
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    /Users/ryanresella/projects/sba_ruby/lib/sba/client/connection.rb: 
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    /Users/ryanresella/projects/sba_ruby/lib/sba/client/request.rb: 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 
+    /Users/ryanresella/projects/sba_ruby/lib/sba/client/loans.rb: 
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    /Users/ryanresella/projects/sba_ruby/lib/sba/client/licenses.rb: 
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    /Users/ryanresella/projects/sba_ruby/lib/sba/client/sites.rb: 
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    /Users/ryanresella/projects/sba_ruby/lib/sba/client/urls.rb: 
+    - 
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 
+    /Users/ryanresella/projects/sba_ruby/spec/loans_spec.rb: 
+    - 1
+    - 
+    - 1
     - 1
     - 2
     - 
     - 
-    - 
-    - 1
-    - 0
-    - 0
-    - 
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 1
-    - 
-    /Users/danielmelton/Documents/development/railsapps/sba_ruby/lib/sba/configuration.rb: 
-    - 1
-    - 
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 1
-    - 
-    - 
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 1
-    - 
-    - 1
-    - 1
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 12
-    - 
-    - 
-    - 1
-    - 3
-    - 3
-    - 3
-    - 3
-    - 3
-    - 
-    - 
-    - 
-    /Users/danielmelton/Documents/development/railsapps/sba_ruby/lib/sba/client.rb: 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 1
-    - 1
     - 1
-    - 
-    - 1
-    - 2
-    - 2
-    - 10
-    - 
-    - 
-    - 
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    /Users/danielmelton/Documents/development/railsapps/sba_ruby/lib/sba/client/connection.rb: 
-    - 1
-    - 
-    - 1
-    - 1
-    - 
-    - 1
-    - 1
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 
-    - 0
-    - 
-    - 0
-    - 
-    - 
-    - 0
-    - 0
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    /Users/danielmelton/Documents/development/railsapps/sba_ruby/lib/sba/client/request.rb: 
-    - 1
     - 1
     - 1
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 0
-    - 
-    - 
-    - 1
-    - 
-    - 1
-    - 0
-    - 0
-    - 
-    - 0
-    - 
-    - 0
-    - 0
-    - 
-    - 
-    - 0
-    - 
     - 
     - 
     - 
-    - 
-    /Users/danielmelton/Documents/development/railsapps/sba_ruby/lib/sba/client/loans.rb: 
-    - 
-    - 1
-    - 
-    - 1
     - 1
     - 1
     - 1
@@ -212,40 +269,24 @@ RSpec:
     - 
     - 
     - 
-    /Users/danielmelton/Documents/development/railsapps/sba_ruby/lib/sba/client/licenses.rb: 
-    - 
+    /Users/ryanresella/projects/sba_ruby/spec/sba_spec.rb: 
     - 1
     - 
     - 1
     - 1
     - 1
     - 1
-    - 
     - 
     - 
     - 
-    /Users/danielmelton/Documents/development/railsapps/sba_ruby/lib/sba/client/sites.rb: 
-    - 
+    /Users/ryanresella/projects/sba_ruby/spec/sites_spec.rb: 
     - 1
     - 
-    - 1
-    - 1
     - 1
-    - 1
-    - 
-    - 
-    - 
-    - 
-    /Users/danielmelton/Documents/development/railsapps/sba_ruby/lib/sba/client/urls.rb: 
     - 
+    /Users/ryanresella/projects/sba_ruby/spec/urls_spec.rb: 
     - 1
     - 
     - 1
-    - 1
-    - 1
-    - 1
-    - 
-    - 
-    - 
     - 
-  :created_at: 2011-05-18 10:11:34.365892 -07:00
+  :created_at: 2011-05-18 14:26:39.316109 -04:00
