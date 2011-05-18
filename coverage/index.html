@@ -21,21 +21,21 @@
       <img src="./assets/0.4.4/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2011-05-18T10:11:34-07:00">2011-05-18T10:11:34-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2011-05-18T12:21:51-07:00">2011-05-18T12:21:51-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     All Files
-    (<span class="yellow">80.51%</span>)
+    (<span class="red">79.71%</span>)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>9</b> files in total.
-    <b>118</b> relevant lines. 
-    <span class="green"><b>95</b> lines covered</span> and
-    <span class="red"><b>23</b> lines missed </span>
+    <b>10</b> files in total.
+    <b>138</b> relevant lines. 
+    <span class="green"><b>110</b> lines covered</span> and
+    <span class="red"><b>28</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,12 +51,21 @@
     <tbody>
       
       <tr>
+        <td><a href="#fa5dfc4691a7ac569f005ee3e0e04fd600ac3845" class="src_link" title="./lib/faraday/response/raise_error.rb">./lib/faraday/response/raise_error.rb</a></td>
+        <td class="red">33.33 %</td>
+        <td>31</td>
+        <td>15</td>
+        <td>5</td>
+        <td>10</td>
+      </tr>
+      
+      <tr>
         <td><a href="#cfbc613fce467bfb4e29e16f1f95d7bedaed19c2" class="src_link" title="./lib/sba.rb">./lib/sba.rb</a></td>
-        <td class="green">90.48 %</td>
+        <td class="green">95.24 %</td>
         <td>51</td>
         <td>21</td>
-        <td>19</td>
-        <td>2</td>
+        <td>20</td>
+        <td>1</td>
       </tr>
       
       <tr>
@@ -70,11 +79,11 @@
       
       <tr>
         <td><a href="#d2c9462c8d0ab714e7896fdaae528665a1553c93" class="src_link" title="./lib/sba/client/connection.rb">./lib/sba/client/connection.rb</a></td>
-        <td class="red">37.5 %</td>
-        <td>36</td>
-        <td>16</td>
-        <td>6</td>
+        <td class="red">58.82 %</td>
+        <td>37</td>
+        <td>17</td>
         <td>10</td>
+        <td>7</td>
       </tr>
       
       <tr>
@@ -97,20 +106,20 @@
       
       <tr>
         <td><a href="#2eb1ce0f53f132de75cca4735d27b4de0dade168" class="src_link" title="./lib/sba/client/request.rb">./lib/sba/client/request.rb</a></td>
-        <td class="red">47.37 %</td>
+        <td class="red">57.89 %</td>
         <td>37</td>
         <td>19</td>
-        <td>9</td>
-        <td>10</td>
+        <td>11</td>
+        <td>8</td>
       </tr>
       
       <tr>
         <td><a href="#f2b611546185852dddf178044a22089e28a98348" class="src_link" title="./lib/sba/client/sites.rb">./lib/sba/client/sites.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>11</td>
-        <td>5</td>
-        <td>5</td>
-        <td>0</td>
+        <td class="yellow">88.89 %</td>
+        <td>25</td>
+        <td>9</td>
+        <td>8</td>
+        <td>1</td>
       </tr>
       
       <tr>
@@ -146,13 +155,437 @@
     
       <div class="source_files">
       
+        <div class="source_table" id="fa5dfc4691a7ac569f005ee3e0e04fd600ac3845">
+  <table>
+    <thead>
+    <tr>
+      <td colspan="3">
+        <h3>./lib/faraday/response/raise_error.rb</h3>
+        <h4><span class="red">33.33 %</span> covered</h4>
+      </td>
+    </tr>
+    <tr>
+      <th>#</th>
+      <th></th>
+      <th>Hits</th>
+    </tr>
+    </thead>
+    <tbody>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>1</pre>
+      </td>
+      <td>
+        <pre>require 'faraday'</pre>
+      </td>
+      <td class="hits">
+        1
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>2</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>3</pre>
+      </td>
+      <td>
+        <pre># @api private</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>4</pre>
+      </td>
+      <td>
+        <pre>module Faraday</pre>
+      </td>
+      <td class="hits">
+        1
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>5</pre>
+      </td>
+      <td>
+        <pre>  class Response::RaiseError &lt; Response::Middleware</pre>
+      </td>
+      <td class="hits">
+        1
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>6</pre>
+      </td>
+      <td>
+        <pre>    def on_complete(response)</pre>
+      </td>
+      <td class="hits">
+        1
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>7</pre>
+      </td>
+      <td>
+        <pre>      case response[:status].to_i</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>8</pre>
+      </td>
+      <td>
+        <pre>      when 400</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>9</pre>
+      </td>
+      <td>
+        <pre>        raise SBA::BadRequest, error_message(response)</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>10</pre>
+      </td>
+      <td>
+        <pre>      when 401</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>11</pre>
+      </td>
+      <td>
+        <pre>        raise SBA::Unauthorized, error_message(response)</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>12</pre>
+      </td>
+      <td>
+        <pre>      when 403</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>13</pre>
+      </td>
+      <td>
+        <pre>        raise SBA::Forbidden, error_message(response)</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>14</pre>
+      </td>
+      <td>
+        <pre>      when 404</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>15</pre>
+      </td>
+      <td>
+        <pre>        raise SBA::NotFound, error_message(response)</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>16</pre>
+      </td>
+      <td>
+        <pre>      when 406</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>17</pre>
+      </td>
+      <td>
+        <pre>        raise SBA::NotAcceptable, error_message(response)</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>18</pre>
+      </td>
+      <td>
+        <pre>      when 500</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>19</pre>
+      </td>
+      <td>
+        <pre>        raise SBA::InternalServerError, error_message(response)</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>20</pre>
+      </td>
+      <td>
+        <pre>      when 502</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>21</pre>
+      </td>
+      <td>
+        <pre>        raise SBA::BadGateway, error_message(response)</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>22</pre>
+      </td>
+      <td>
+        <pre>      when 503</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>23</pre>
+      </td>
+      <td>
+        <pre>        raise SBA::ServiceUnavailable, error_message(response)</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>24</pre>
+      </td>
+      <td>
+        <pre>      end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>25</pre>
+      </td>
+      <td>
+        <pre>    end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>26</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>27</pre>
+      </td>
+      <td>
+        <pre>    def error_message(response)</pre>
+      </td>
+      <td class="hits">
+        1
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>28</pre>
+      </td>
+      <td>
+        <pre>      &quot;#{response[:method].to_s.upcase} #{response[:url].to_s}: #{response[:response_headers]['status']}#{(': ' + response[:body]['error']) if response[:body] &amp;&amp; response[:body]['error']}&quot;</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>29</pre>
+      </td>
+      <td>
+        <pre>    end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>30</pre>
+      </td>
+      <td>
+        <pre>  end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>31</pre>
+      </td>
+      <td>
+        <pre>end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    </tbody>
+  </table>
+</div>
+      
         <div class="source_table" id="cfbc613fce467bfb4e29e16f1f95d7bedaed19c2">
   <table>
     <thead>
     <tr>
       <td colspan="3">
         <h3>./lib/sba.rb</h3>
-        <h4><span class="green">90.48 %</span> covered</h4>
+        <h4><span class="green">95.24 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -307,7 +740,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="4">
       <td class="line_number">
         <pre>12</pre>
       </td>
@@ -315,7 +748,7 @@
         <pre>    SBA::Client.new(options)</pre>
       </td>
       <td class="hits">
-        2
+        4
       </td>
     </tr>
   
@@ -372,7 +805,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>17</pre>
       </td>
@@ -380,12 +813,12 @@
         <pre>    return super unless client.respond_to?(method)</pre>
       </td>
       <td class="hits">
-        0
+        2
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>18</pre>
       </td>
@@ -393,7 +826,7 @@
         <pre>    client.send(method, *args, &amp;block)</pre>
       </td>
       <td class="hits">
-        0
+        2
       </td>
     </tr>
   
@@ -437,7 +870,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="miss" data-hits="0">
       <td class="line_number">
         <pre>22</pre>
       </td>
@@ -445,7 +878,7 @@
         <pre>    client.respond_to?(method, include_private) || super(method, include_private)</pre>
       </td>
       <td class="hits">
-        1
+        0
       </td>
     </tr>
   
@@ -1004,7 +1437,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="4">
       <td class="line_number">
         <pre>13</pre>
       </td>
@@ -1012,12 +1445,12 @@
         <pre>      options = SBA.options.merge(options)</pre>
       </td>
       <td class="hits">
-        2
+        4
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="2">
+    <tr class="hit" data-hits="4">
       <td class="line_number">
         <pre>14</pre>
       </td>
@@ -1025,12 +1458,12 @@
         <pre>      Configuration::VALID_OPTIONS_KEYS.each do |key|</pre>
       </td>
       <td class="hits">
-        2
+        4
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="10">
+    <tr class="hit" data-hits="20">
       <td class="line_number">
         <pre>15</pre>
       </td>
@@ -1038,7 +1471,7 @@
         <pre>        send(&quot;#{key}=&quot;, options[key])</pre>
       </td>
       <td class="hits">
-        10
+        20
       </td>
     </tr>
   
@@ -1195,7 +1628,7 @@
     <tr>
       <td colspan="3">
         <h3>./lib/sba/client/connection.rb</h3>
-        <h4><span class="red">37.5 %</span> covered</h4>
+        <h4><span class="red">58.82 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -1220,9 +1653,22 @@
     </tr>
   
     
-    <tr class="never" >
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>2</pre>
+      </td>
+      <td>
+        <pre>require 'faraday/response/raise_error'</pre>
+      </td>
+      <td class="hits">
+        1
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>3</pre>
       </td>
       <td>
         <pre></pre>
@@ -1235,7 +1681,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>3</pre>
+        <pre>4</pre>
       </td>
       <td>
         <pre>module SBA</pre>
@@ -1248,7 +1694,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>4</pre>
+        <pre>5</pre>
       </td>
       <td>
         <pre>  class Client</pre>
@@ -1261,7 +1707,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>5</pre>
+        <pre>6</pre>
       </td>
       <td>
         <pre>    # @private</pre>
@@ -1274,7 +1720,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>6</pre>
+        <pre>7</pre>
       </td>
       <td>
         <pre>    module Connection</pre>
@@ -1287,7 +1733,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>7</pre>
+        <pre>8</pre>
       </td>
       <td>
         <pre>      private</pre>
@@ -1300,7 +1746,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>8</pre>
+        <pre>9</pre>
       </td>
       <td>
         <pre></pre>
@@ -1313,7 +1759,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>9</pre>
+        <pre>10</pre>
       </td>
       <td>
         <pre>      def connection(raw=false)</pre>
@@ -1324,22 +1770,22 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
-        <pre>10</pre>
+        <pre>11</pre>
       </td>
       <td>
         <pre>        options = {</pre>
       </td>
       <td class="hits">
-        0
+        2
       </td>
     </tr>
   
     
     <tr class="never" >
       <td class="line_number">
-        <pre>11</pre>
+        <pre>12</pre>
       </td>
       <td>
         <pre>          #:headers =&gt; {'Accept' =&gt; &quot;*/#{format}&quot;, 'User-Agent' =&gt; user_agent},</pre>
@@ -1352,7 +1798,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>12</pre>
+        <pre>13</pre>
       </td>
       <td>
         <pre>          :headers =&gt; {'Accept' =&gt; 'application/json'},</pre>
@@ -1365,7 +1811,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>13</pre>
+        <pre>14</pre>
       </td>
       <td>
         <pre>          :proxy =&gt; proxy,</pre>
@@ -1378,7 +1824,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>14</pre>
+        <pre>15</pre>
       </td>
       <td>
         <pre>          :ssl =&gt; {:verify =&gt; false},</pre>
@@ -1391,7 +1837,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>15</pre>
+        <pre>16</pre>
       </td>
       <td>
         <pre>          :url =&gt; 'http://api.sba.gov/' + endpoint.to_s</pre>
@@ -1404,7 +1850,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>16</pre>
+        <pre>17</pre>
       </td>
       <td>
         <pre>        }</pre>
@@ -1417,7 +1863,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>17</pre>
+        <pre>18</pre>
       </td>
       <td>
         <pre></pre>
@@ -1428,35 +1874,35 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
-        <pre>18</pre>
+        <pre>19</pre>
       </td>
       <td>
         <pre>        Faraday::Connection.new(options) do |connection|</pre>
       </td>
       <td class="hits">
-        0
+        2
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
-        <pre>19</pre>
+        <pre>20</pre>
       </td>
       <td>
         <pre>          connection.use Faraday::Request::Multipart</pre>
       </td>
       <td class="hits">
-        0
+        2
       </td>
     </tr>
   
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>20</pre>
+        <pre>21</pre>
       </td>
       <td>
         <pre>          unless raw</pre>
@@ -1469,7 +1915,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>21</pre>
+        <pre>22</pre>
       </td>
       <td>
         <pre>            connection.use Faraday::Response::Mashify</pre>
@@ -1482,7 +1928,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>22</pre>
+        <pre>23</pre>
       </td>
       <td>
         <pre>            case format.to_s.downcase</pre>
@@ -1495,7 +1941,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>23</pre>
+        <pre>24</pre>
       </td>
       <td>
         <pre>            when 'json'</pre>
@@ -1508,7 +1954,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>24</pre>
+        <pre>25</pre>
       </td>
       <td>
         <pre>              connection.use Faraday::Response::ParseJson</pre>
@@ -1521,7 +1967,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>25</pre>
+        <pre>26</pre>
       </td>
       <td>
         <pre>            when 'xml'</pre>
@@ -1534,7 +1980,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>26</pre>
+        <pre>27</pre>
       </td>
       <td>
         <pre>              connection.use Faraday::Response::ParseXml</pre>
@@ -1547,7 +1993,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>27</pre>
+        <pre>28</pre>
       </td>
       <td>
         <pre>            end</pre>
@@ -1560,7 +2006,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>28</pre>
+        <pre>29</pre>
       </td>
       <td>
         <pre>          end</pre>
@@ -1573,7 +2019,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>29</pre>
+        <pre>30</pre>
       </td>
       <td>
         <pre>          connection.use Faraday::Response::RaiseError</pre>
@@ -1586,7 +2032,7 @@
     
     <tr class="miss" data-hits="0">
       <td class="line_number">
-        <pre>30</pre>
+        <pre>31</pre>
       </td>
       <td>
         <pre>          connection.adapter(adapter)</pre>
@@ -1599,7 +2045,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>31</pre>
+        <pre>32</pre>
       </td>
       <td>
         <pre>        end</pre>
@@ -1612,7 +2058,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>32</pre>
+        <pre>33</pre>
       </td>
       <td>
         <pre>      end</pre>
@@ -1625,7 +2071,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>33</pre>
+        <pre>34</pre>
       </td>
       <td>
         <pre>    end</pre>
@@ -1638,7 +2084,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>34</pre>
+        <pre>35</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -1651,7 +2097,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>35</pre>
+        <pre>36</pre>
       </td>
       <td>
         <pre>end</pre>
@@ -1664,7 +2110,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>36</pre>
+        <pre>37</pre>
       </td>
       <td>
         <pre></pre>
@@ -2012,7 +2458,7 @@
     <tr>
       <td colspan="3">
         <h3>./lib/sba/client/request.rb</h3>
-        <h4><span class="red">47.37 %</span> covered</h4>
+        <h4><span class="red">57.89 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -2076,7 +2522,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>5</pre>
       </td>
@@ -2084,7 +2530,7 @@
         <pre>        request(:get, path, options, raw)</pre>
       </td>
       <td class="hits">
-        0
+        2
       </td>
     </tr>
   
@@ -2310,7 +2756,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>23</pre>
       </td>
@@ -2318,7 +2764,7 @@
         <pre>        response = connection(raw).send(method) do |request|</pre>
       </td>
       <td class="hits">
-        0
+        2
       </td>
     </tr>
   
@@ -2514,7 +2960,7 @@
     <tr>
       <td colspan="3">
         <h3>./lib/sba/client/sites.rb</h3>
-        <h4><span class="green">100.0 %</span> covered</h4>
+        <h4><span class="yellow">88.89 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -2635,7 +3081,7 @@
         <pre>9</pre>
       </td>
       <td>
-        <pre>    end</pre>
+        <pre>    # Returns all recommended sites for all keywords and phrases.</pre>
       </td>
       <td class="hits">
         
@@ -2648,7 +3094,7 @@
         <pre>10</pre>
       </td>
       <td>
-        <pre>  end</pre>
+        <pre>    #</pre>
       </td>
       <td class="hits">
         
@@ -2659,6 +3105,188 @@
     <tr class="never" >
       <td class="line_number">
         <pre>11</pre>
+      </td>
+      <td>
+        <pre>    # @format :xml</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>12</pre>
+      </td>
+      <td>
+        <pre>    # @return {Hash}</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>13</pre>
+      </td>
+      <td>
+        <pre>    # @see http://www.sba.gov/about-sba-services/7630#all</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>14</pre>
+      </td>
+      <td>
+        <pre>    # @example Returns recommended sites for keywords and phrases</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>15</pre>
+      </td>
+      <td>
+        <pre>    #   SBA.all_sites</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>16</pre>
+      </td>
+      <td>
+        <pre>    def all_sites(options={})</pre>
+      </td>
+      <td class="hits">
+        1
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="2">
+      <td class="line_number">
+        <pre>17</pre>
+      </td>
+      <td>
+        <pre>      options.merge!({:format =&gt; &quot;xml&quot;})                </pre>
+      </td>
+      <td class="hits">
+        2
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="2">
+      <td class="line_number">
+        <pre>18</pre>
+      </td>
+      <td>
+        <pre>      response = get('rec_sites/all_sites/keywords', options)</pre>
+      </td>
+      <td class="hits">
+        2
+      </td>
+    </tr>
+  
+    
+    <tr class="miss" data-hits="0">
+      <td class="line_number">
+        <pre>19</pre>
+      </td>
+      <td>
+        <pre>      response[&quot;result&quot;][&quot;rec_sites&quot;]</pre>
+      </td>
+      <td class="hits">
+        0
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>20</pre>
+      </td>
+      <td>
+        <pre>    end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>21</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>22</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>23</pre>
+      </td>
+      <td>
+        <pre>    end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>24</pre>
+      </td>
+      <td>
+        <pre>  end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>25</pre>
       </td>
       <td>
         <pre>end</pre>
@@ -3270,7 +3898,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="12">
+    <tr class="hit" data-hits="24">
       <td class="line_number">
         <pre>33</pre>
       </td>
@@ -3278,7 +3906,7 @@
         <pre>      VALID_OPTIONS_KEYS.inject({}){|o,k| o.merge!(k =&gt; send(k)) }</pre>
       </td>
       <td class="hits">
-        12
+        24
       </td>
     </tr>
   
@@ -3322,7 +3950,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>37</pre>
       </td>
@@ -3330,12 +3958,12 @@
         <pre>      self.adapter      = DEFAULT_ADAPTER</pre>
       </td>
       <td class="hits">
-        3
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>38</pre>
       </td>
@@ -3343,12 +3971,12 @@
         <pre>      self.user_agent   = DEFAULT_USER_AGENT</pre>
       </td>
       <td class="hits">
-        3
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>39</pre>
       </td>
@@ -3356,12 +3984,12 @@
         <pre>      self.endpoint     = DEFAULT_ENDPOINT</pre>
       </td>
       <td class="hits">
-        3
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>40</pre>
       </td>
@@ -3369,12 +3997,12 @@
         <pre>      self.format       = DEFAULT_FORMAT</pre>
       </td>
       <td class="hits">
-        3
+        1
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="3">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>41</pre>
       </td>
@@ -3382,7 +4010,7 @@
         <pre>      self.proxy        = DEFAULT_FORMAT</pre>
       </td>
       <td class="hits">
-        3
+        1
       </td>
     </tr>
   
