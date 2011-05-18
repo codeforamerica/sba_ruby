@@ -1,6 +1,6 @@
-FCC Reboot
+SBA API
 =======
-A Ruby wrapper for the FCC Reboot APIs.
+A Ruby wrapper for the SBA APIs at http://www.sba.gov/api.
 
 Does your project or organization use this gem?
 ------------------------------------------
