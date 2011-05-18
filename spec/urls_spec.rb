@@ -73,7 +73,7 @@ describe SBA do
       result[0]['url'].should == 'http://www.athensclarkecounty.com/'
     end
   end
-  describe ".primary_url_for_county" do
+  describe ".all_primary_urls_for_county" do
     before do
       stub_request(:get, 'http://api.sba.gov/geodata/primary_links_for_county_of/clarke%20county/ga.json').
         with().

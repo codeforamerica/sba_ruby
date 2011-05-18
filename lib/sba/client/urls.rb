@@ -21,7 +21,7 @@ module SBA
         options.merge!({:format => "json"})
         response = get("geodata/primary_links_for_city_of/#{city}/#{state}.json")
       end
-      def primary_url_for_county(county, state, options={})
+      def all_primary_urls_for_county(county, state, options={})
         options.merge!({:format => "json"})
         response = get("geodata/primary_links_for_county_of/#{county}/#{state}.json")
       end
