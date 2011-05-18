@@ -28,8 +28,5 @@ module Faraday
       "#{response[:method].to_s.upcase} #{response[:url].to_s}: #{response[:response_headers]['status']}#{(': ' + response[:body]['error']) if response[:body] && response[:body]['error']}"
     end
   end
-<<<<<<< HEAD
 end
-=======
-end
->>>>>>> 7d3941ea1914827a3b892d5afa178c1b4dc62a76
+
