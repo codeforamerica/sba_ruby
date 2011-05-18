@@ -89,7 +89,6 @@ describe SBA do
       result = SBA.primary_url_for_county('clarke county', 'ga')
       result[0]['url'].should == 'http://www.athensclarkecounty.com/'
       result[1]['url'].should == 'http://www.cityofwinterville.com/'
-      result[2]['url'].should == 'http://www.athensclarkecounty.com/'
     end
   end
 end
