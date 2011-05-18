@@ -56,4 +56,40 @@ describe SBA do
     end
     it "should have the correct response"
   end
+  describe ".primary_url_for_city" do
+    before do
+      stub_request(:get, 'http://api.sba.gov/geodata/primary_links_for_city_of/athens/ga.json').
+        with().
+        to_return(:body => fixture('primary_url_for_athens.json'))
+    end
+    it "should request the correct resource" do
+      SBA.primary_url_for_city('athens', 'ga')
+      a_request(:get, 'http://api.sba.gov/geodata/primary_links_for_city_of/athens/ga.json').
+        with().
+        should have_been_made
+    end
+    it "should have the correct response" do
+      result = SBA.primary_url_for_city('athens', 'ga')
+      result[0]['url'].should == 'http://www.athensclarkecounty.com/'
+    end
+  end
+  describe ".primary_url_for_county" do
+    before do
+      stub_request(:get, 'http://api.sba.gov/geodata/primary_links_for_county_of/clarke%20county/ga.json').
+        with().
+        to_return(:body => fixture('primary_url_for_clarke_county.json'))
+    end
+    it "should request the correct resource" do
+      SBA.primary_url_for_county('clarke county', 'ga')
+      a_request(:get, 'http://api.sba.gov/geodata/primary_links_for_county_of/clarke%20county/ga.json').
+        with().
+        should have_been_made
+    end
+    it "should get the correct data" do
+      result = SBA.primary_url_for_county('clarke county', 'ga')
+      result[0]['url'].should == 'http://www.athensclarkecounty.com/'
+      result[1]['url'].should == 'http://www.cityofwinterville.com/'
+      result[2]['url'].should == 'http://www.athensclarkecounty.com/'
+    end
+  end
 end
