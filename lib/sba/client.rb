@@ -21,6 +21,12 @@ module SBA
     include SBA::Client::Urls
     include SBA::Client::Loans
     include SBA::Client::Licenses
-    include SBA::Client::Sites            
+    include SBA::Client::Sites  
+    
+    def by_category(category, options={})
+      get("/license_permit/by_category/#{category}.json", options)
+    end
+    
+              
   end
 end
