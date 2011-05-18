@@ -80,13 +80,13 @@ describe SBA do
         to_return(:body => fixture('primary_url_for_clarke_county.json'))
     end
     it "should request the correct resource" do
-      SBA.primary_url_for_county('clarke county', 'ga')
+      SBA.all_primary_urls_for_county('clarke county', 'ga')
       a_request(:get, 'http://api.sba.gov/geodata/primary_links_for_county_of/clarke%20county/ga.json').
         with().
         should have_been_made
     end
     it "should get the correct data" do
-      result = SBA.primary_url_for_county('clarke county', 'ga')
+      result = SBA.all_primary_urls_for_county('clarke county', 'ga')
       result[0]['url'].should == 'http://www.athensclarkecounty.com/'
       result[1]['url'].should == 'http://www.cityofwinterville.com/'
     end
