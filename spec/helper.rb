@@ -14,6 +14,10 @@ RSpec.configure do |config|
   config.include WebMock::API
 end
 
+def stub_get(path)
+  stub_request(:get, 'http://api.sba.gov/' + path)
+end
+
 def fixture_path
   File.expand_path("../fixtures", __FILE__)
 end
