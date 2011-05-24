@@ -35,6 +35,10 @@ module SBA
       get("/license_permit/by_category/#{category}.json", options)
     end
     
+    def by_state(state, options={})
+      get("/license_permit/all_by_state/#{state}.json", options)
+    end
+    
               
   end
 end

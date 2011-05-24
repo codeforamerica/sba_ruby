@@ -20,7 +20,7 @@ describe SBA::Client do
   describe "#by_state" do
     before do
       stub_get("license_permit/all_by_state/ca.json").
-        to_return(:status => 200, :body => fixture("business_licenses_permits_api_state.json"))
+        to_return(:status => 200, :body => fixture("by_state.json"))
     end
     
     it "should return business types required to operate in an specific state" do
