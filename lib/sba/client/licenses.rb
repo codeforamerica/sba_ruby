@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-require 'JSON'
+require 'json'
 
 module SBA
   class Client
