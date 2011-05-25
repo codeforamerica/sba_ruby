@@ -14,8 +14,8 @@ module SBA
     # @example Returns recommended sites for keywords and phrases
     #   SBA.all_sites
     def all_sites(options={})
-      response = get('rec_sites/all_sites/keywords', options)
-      response["result"]["rec_sites"]
+      response = get('rec_sites/all_sites/keywords.json', options)
+      simplify_response(response)
     end
 
 
