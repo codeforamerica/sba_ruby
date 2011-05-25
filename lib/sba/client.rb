@@ -28,7 +28,11 @@ module SBA
     def simplify_response(response)
       #the returned 'key' is pretty useless. the key=>value thing here is basically an array
       #within that, we're given an array of key=>value pairs. we want this to be one big hash.
-      response.sort.map {|(key,value)| value.inject({}) {|all,current| all.merge! current}}
+      response.inject([]) do |array,(key,value)|
+        i = key.match(/\d+$/)[0].to_i
+        array[i] = value.inject({}) {|all,current| all.merge! current}
+        array
+      end
     end
               
   end
