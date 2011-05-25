@@ -16,7 +16,7 @@ module SBA
     DEFAULT_ADAPTER      = Faraday.default_adapter
     DEFAULT_ENDPOINT     = nil
     DEFAULT_PROXY        = nil
-    DEFAULT_FORMAT       = nil
+    DEFAULT_FORMAT       = :json
     DEFAULT_USER_AGENT   = "SBA Ruby Gem #{SBA::VERSION}".freeze
 
     attr_accessor *VALID_OPTIONS_KEYS
