@@ -18,28 +18,29 @@ describe SBA do
     it "should return the correct results" do
       test = SBA.by_category('doing business as')
       test.should be_a Hash
-      test.first.url.should == "http://www.sec.state.vt.us/tutor/dobiz/dobizdoc.htm"
+      test[0]["url"].should == "http://www.sec.state.vt.us/tutor/dobiz/dobizdoc.htm"
     end
   end
   
  
   describe "#by_state" do
     before do
-        stub_request(:get, 'http://api.sba.gov/license_permit/all_by_state/ca.json').
+    	@path = "http://api.sba.gov/license_permit/all_by_state/CA.json?format=json"
+        stub_request(:get, @path).
           with().
           to_return(:body => fixture('by_state.json'),
                     :headers => {'Content-Type' => 'application/json'})
       end
       it "should request the correct resource" do
         SBA.by_state("CA")
-        a_request(:get, 'http://api.sba.gov/license_permit/all_by_state/ca.json').
+        a_request(:get, @path).
           with().
           should have_been_made
       end
       it "should return the correct results" do
         test = SBA.by_state("CA")
         test.should be_a Hash
-        by_state.first.title.should == "Obtain Disability Insurance"
+        test[0]["title"].should == "Obtain Disability Insurance"
       end
     end    
 end
