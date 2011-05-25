@@ -18,7 +18,7 @@ describe SBA do
     it "should return the correct results" do
       test = SBA.by_category('doing business as')
       test.should be_a Array
-      test[0]["url"].should == "http://www.sec.state.vt.us/tutor/dobiz/dobizdoc.htm"
+      test[52]["url"].should == "http://www.sec.state.vt.us/tutor/dobiz/dobizdoc.htm"
     end
   end
 
