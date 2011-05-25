@@ -30,13 +30,13 @@ describe SBA do
                   :headers => {'Content-Type' => 'application/json'})
     end
     it "should request the correct resource" do
-      SBA.loan_grants_by_state("CA")
+      SBA.loan_grants_by_state("ca")
       a_request(:get, 'http://api.sba.gov/loans_grants/state_financing_for/ca.json').
         with().
         should have_been_made
     end
     it "should return the correct results" do
-      test = SBA.loan_grants_by_state("CA")
+      test = SBA.loan_grants_by_state("ca")
       test.should be_an Array
       test[0]["title"].should == "Small Business Loan Guarantee Program"
     end
