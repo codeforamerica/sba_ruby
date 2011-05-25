@@ -59,7 +59,7 @@ describe SBA do
       test = SBA.loan_grants_by_federal_state("ca")
       test.should be_an Array
       test[0]["title"].should == "Emergency Farm Loans"
-      test[1]["title"].should == "Disaster Assistance Loans"
+      test[1]["title"].should == "Economic Injury Loans"
     end
   end
 end
