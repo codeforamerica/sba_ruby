@@ -14,6 +14,11 @@ module SBA
         options.merge!({:format=> "json"})
         response = get("loans_grants/state_financing_for/#{state}.json")
       end
+      
+      def loan_grants_by_federal_state(state, options={})
+        options.merge!({:format=> "json"})
+        response = get("loans_grants/federal_and_state_financing_for/#{state}.json")
+      end
 
     end
   end
