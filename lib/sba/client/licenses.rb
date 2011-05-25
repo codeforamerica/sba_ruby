@@ -19,13 +19,6 @@ module SBA
         simplify_response(response)
       end
       
-      private
-      def simplify_response(response)
-        #the returned 'key' is pretty useless. the key=>value thing here is basically an array
-        #within that, we're given an array of key=>value pairs. we want this to be one big hash.
-        response.map {|key,value| value.inject({}) {|all,current| all.merge! current}}
-      end
-      
     end
   end
 end

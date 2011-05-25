@@ -23,7 +23,13 @@ module SBA
     include SBA::Client::Licenses
     include SBA::Client::Sites  
     
-    
+    private
+    #some JSON replies we get back are in an ugly format. simplify them
+    def simplify_response(response)
+      #the returned 'key' is pretty useless. the key=>value thing here is basically an array
+      #within that, we're given an array of key=>value pairs. we want this to be one big hash.
+      response.sort.map {|(key,value)| value.inject({}) {|all,current| all.merge! current}}
+    end
               
   end
 end
