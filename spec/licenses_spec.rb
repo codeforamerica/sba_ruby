@@ -17,7 +17,7 @@ describe SBA do
     end
     it "should return the correct results" do
       test = SBA.by_category('doing business as')
-      test.should be_a Hash
+      test.should be_a Array
       test[0]["url"].should == "http://www.sec.state.vt.us/tutor/dobiz/dobizdoc.htm"
     end
   end
@@ -38,7 +38,7 @@ describe SBA do
     end
     it "should return the correct results" do
       test = SBA.by_state("CA")
-      test.should be_a Hash
+      test.should be_a Array
       test[0]["title"].should == "Obtain Disability Insurance"
     end
   end
