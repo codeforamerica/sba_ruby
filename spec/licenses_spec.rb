@@ -3,7 +3,7 @@ require 'helper'
 describe SBA do
   
   describe "#by_category" do
-   before do
+    before do
       stub_request(:get, 'http://api.sba.gov/license_permit/by_category/doing%20business%20as.json').
         with().
         to_return(:body => fixture('doing_business_as.json'),
@@ -21,26 +21,25 @@ describe SBA do
       test[0]["url"].should == "http://www.sec.state.vt.us/tutor/dobiz/dobizdoc.htm"
     end
   end
-  
- 
+
   describe "#by_state" do
     before do
-    	@path = "http://api.sba.gov/license_permit/all_by_state/CA.json?format=json"
-        stub_request(:get, @path).
-          with().
-          to_return(:body => fixture('by_state.json'),
-                    :headers => {'Content-Type' => 'application/json'})
-      end
-      it "should request the correct resource" do
-        SBA.by_state("CA")
-        a_request(:get, @path).
-          with().
-          should have_been_made
-      end
-      it "should return the correct results" do
-        test = SBA.by_state("CA")
-        test.should be_a Hash
-        test[0]["title"].should == "Obtain Disability Insurance"
-      end
-    end    
+    @path = "http://api.sba.gov/license_permit/all_by_state/CA.json?format=json"
+      stub_request(:get, @path).
+      with().
+      to_return(:body => fixture('by_state.json'),
+                :headers => {'Content-Type' => 'application/json'})
+    end
+    it "should request the correct resource" do
+      SBA.by_state("CA")
+      a_request(:get, @path).
+        with().
+        should have_been_made
+    end
+    it "should return the correct results" do
+      test = SBA.by_state("CA")
+      test.should be_a Hash
+      test[0]["title"].should == "Obtain Disability Insurance"
+    end
+  end
 end
