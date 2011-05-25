@@ -14,7 +14,6 @@ module SBA
     # @example Returns recommended sites for keywords and phrases
     #   SBA.all_sites
     def all_sites(options={})
-      options.merge!({:format => "xml"})                
       response = get('rec_sites/all_sites/keywords', options)
       response["result"]["rec_sites"]
     end
