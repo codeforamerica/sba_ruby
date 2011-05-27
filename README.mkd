@@ -55,3 +55,5 @@ Copyright
 ---------
 Copyright (c) 2010 Code for America Laboratories
 See [LICENSE](https://github.com/cfalabs/sba/blob/master/LICENSE.mkd) for details.
+
+[![Code for America Tracker](http://stats.codeforamerica.org/codeforamerica/sba_ruby.png)](http://stats.codeforamerica.org/projects/sba_ruby)
