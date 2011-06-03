@@ -83,5 +83,24 @@ describe SBA do
         test[0]["url"].should == "http://www.dss.virginia.gov/facility/child_care/licensed/child_day_centers/index.cgi"
       end
     end
-  
+    
+    describe "#business_type_state_county" do
+       before do
+         stub_request(:get, 'http://api.sba.gov/license_permit/state_and_county/child%20care%20services/ca/los%20angeles%20county.json').
+           with().
+           to_return(:body => fixture('business_type_state_county.json'),
+                     :headers => {'Content-Type' => 'application/json'})
+       end
+       it "should request the correct resource" do
+         SBA.business_type_state_county("child care services", "ca", "log angeles")
+         a_request(:get, 'http://api.sba.gov/license_permit/state_and_county/child%20care%20services/ca/los%20angeles%20county.json').
+           with().
+           should have_been_made
+       end
+       it "should return the correct results" do
+         test = SBA.business_type_state_county("child care services", "ca", "log angeles")
+         test.should be_an Array
+         test[0]["url"].should == "http://ttc.lacounty.gov/Proptax/Business_License.htm"
+       end
+     end
 end
