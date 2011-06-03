@@ -104,7 +104,27 @@ describe SBA do
       test[1]["title"].should == "Community Loans for Women, Minority-Owned and Non Profit Businesses"
     end
   end
-  
+
+  describe "loan_grants_by_industry_specialty" do
+    before do
+      stub_request(:get, 'http://api.sba.gov/loans_grants/nil/for_profit/manufacturing/woman.json').
+        with().
+        to_return(:body => fixture('loan_grants_by_industry_specialty.json'),
+                  :headers => {'Content-Type' => 'application/json'})
+    end
+    it "should request the correct resource" do
+      SBA.loan_grants_by_industy_specialty("manufacturing","woman")
+      a_request(:get, 'http://api.sba.gov/loans_grants/nil/for_profit/manufacturing/woman.json').
+        with().
+        should have_been_made
+    end
+    it "should return the correct results" do
+      test = SBA.loan_grants_by_industy_specialty("manufacturing","woman")
+      test.should be_an Array
+      test[0]["title"].should == "Minority, Women, and Disabled Participation Loan Program"
+      test[1]["title"].should == "Target Small Business Assistance Program"
+    end
+  end
   
 end
 
