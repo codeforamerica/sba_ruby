@@ -88,7 +88,7 @@ describe SBA do
     before do
       stub_request(:get, 'http://api.sba.gov/loans_grants/nil/for_profit/nil/woman.json').
         with().
-        to_return(:body => fixture('loan_grants_specialty.json'),
+        to_return(:body => fixture('loan_grants_by_specialty.json'),
                   :headers => {'Content-Type' => 'application/json'})
     end
     it "should request the correct resource" do
