@@ -125,6 +125,27 @@ describe SBA do
       test[1]["title"].should == "Target Small Business Assistance Program"
     end
   end
+
+  describe "loan_grants_by_state_industry" do
+    before do
+      stub_request(:get, 'http://api.sba.gov/loans_grants/me/for_profit/manufacturing/nil.json').
+        with().
+        to_return(:body => fixture('loan_grants_state_industry.json'),
+                  :headers => {'Content-Type' => 'application/json'})
+    end
+    it "should request the correct resource" do
+      SBA.loan_grants_by_state_industry("me","manufacturing")
+      a_request(:get, 'http://api.sba.gov/loans_grants/me/for_profit/manufacturing/nil.json').
+        with().
+        should have_been_made
+    end
+    it "should return the correct results" do
+      test = SBA.loan_grants_by_state_industry("me","manufacturing")
+      test.should be_an Array
+      test[0]["title"].should == "Economic Recovery Loan"
+      test[1]["title"].should == "Intermediary Relending Program"
+    end
+  end
   
 end
 
