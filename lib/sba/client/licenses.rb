@@ -62,6 +62,16 @@ module SBA
         simplify_response(response)
       end
       
+      # Returns business licenses and permits required for a specific type of business in a specific state and county.
+      #
+      # @param business [String] The business parameter includes standard values that allow you to return license and permit information for a specific type of business or for specific employer requirements
+      # @param state [String] Input the two letter postal code for the state abbreviation.
+      # @param county [String] Input the name of the county (or its equivalent).  County (or equivalent) name should including the word "county" (or "parish" etc.)  For example, input Orange County, not Orange.
+      # @param options [Hash] A customizable set of options.
+      # @return {Hash}
+      # @see http://www.sba.gov/content/business-licenses-permits-api-business-type-state-and-county-method
+      # @example
+      #   SBA.business_type_state_county("child care services", "ca", "los angeles county")
       def business_type_state_county(business, state, county, options={})
         response = get("license_permit/state_and_county/#{business}/#{state}/#{county}.json")
         simplify_response(response)
