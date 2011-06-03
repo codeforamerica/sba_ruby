@@ -147,5 +147,47 @@ describe SBA do
     end
   end
   
+  describe "loan_grants_by_state_specialty" do
+    before do
+      stub_request(:get, 'http://api.sba.gov/loans_grants/ny/for_profit/nil/general_purpose.json').
+        with().
+        to_return(:body => fixture('loan_grants_state_specialty.json'),
+                  :headers => {'Content-Type' => 'application/json'})
+    end
+    it "should request the correct resource" do
+      SBA.loan_grants_by_state_specialty("ny","general_purpose")
+      a_request(:get, 'http://api.sba.gov/loans_grants/ny/for_profit/nil/general_purpose.json').
+        with().
+        should have_been_made
+    end
+    it "should return the correct results" do
+      test = SBA.loan_grants_by_state_specialty("ny","general_purpose")
+      test.should be_an Array
+      test[0]["title"].should == "Micro Loans for Minority and Women Owned Businesses"
+      test[1]["title"].should == "Statewide Zone Capital Corporation of New York"
+    end
+  end
+  
+  describe "loan_grants_by_state_industry_specialty" do
+    before do
+      stub_request(:get, 'http://api.sba.gov/loans_grants/me/for_profit/manufacturing/woman.json').
+        with().
+        to_return(:body => fixture('loan_grants_state_ind_spec.json'),
+                  :headers => {'Content-Type' => 'application/json'})
+    end
+    it "should request the correct resource" do
+      SBA.loan_grants_by_state_industy_specialty("me","manufacturing", "woman")
+      a_request(:get, 'http://api.sba.gov/loans_grants/me/for_profit/manufacturing/woman.json').
+        with().
+        should have_been_made
+    end
+    it "should return the correct results" do
+      test = SBA.loan_grants_by_state_industry_specialty("me","manufacturing", "woman")
+      test.should be_an Array
+      test[0]["title"].should == "Economic Recovery Loan"
+      test[1]["title"].should == "Intermediary Relending Program"
+    end
+  end
+  
 end
 
