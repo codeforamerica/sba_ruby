@@ -37,7 +37,7 @@ module SBA
       
       # Returns business licenses and permits required for a specific type of business for all 54 states and territories
       #
-      # @param business [String] The business_type parameter includes standard values that allow you to return license and permit information for a specific type of business or for specific employer requirements
+      # @param business [String] The business parameter includes standard values that allow you to return license and permit information for a specific type of business or for specific employer requirements
       # @param options [Hash] A customizable set of options.
       # @return {Hash}
       # @see http://www.sba.gov/content/business-licenses-permits-api-business-type-method
@@ -48,6 +48,15 @@ module SBA
         simplify_response(response)
       end
 
+      # Returns business licenses and permits required for a specific type of business in a specific state.
+      #
+      # @param business [String] The business parameter includes standard values that allow you to return license and permit information for a specific type of business or for specific employer requirements
+      # @param state [String] Input the two letter postal code for the state abbreviation.
+      # @param options [Hash] A customizable set of options.
+      # @return {Hash}
+      # @see http://www.sba.gov/content/business-licenses-permits-api-business-type-and-state-method
+      # @example
+      #   SBA.business_type_state("child care services", "ca")
       def business_type_state(business, state, options={})
         response = get("license_permit/state_only/#{business}/#{state}.json", options)
         simplify_response(response)
