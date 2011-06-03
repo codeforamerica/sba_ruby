@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grant-loans type="array">
+  <grant-loan>
+    <agency>New York State Division of Minority and Women Business Development</agency>
+    <description>Listing of organizations that provide micro loans to businesses who often do not qualify for bank loans as well as one-on-one counseling and business development assistance to facilitate credit-readiness. Funds are provided by the state's Community Development Financial Institution Assistance Program.</description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">0</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">1</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">1</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Micro Loans for Minority and Women Owned Businesses</title>
+    <url>http://www.nylovesmwbe.ny.gov/Financial%20Resources/cdfi.htm</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>A privately-owned loan fund whose capital is available to promote the expansion and growth of businesses in New York's 51 participating Empire Zones.  Loans range from $30,000 to $300,000.</description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">1</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Statewide Zone Capital Corporation of New York</title>
+    <url>http://www.nybdc.com/loans_empire-zone.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>Provides loans from $50,000-$150,000 for working capital, real estate, leasehold improvements, machinery and equipment, relocation, debt refinancing and business acquisitions.</description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">1</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Micro Loan Program</title>
+    <url>http://www.nybdc.com/loans_microloans.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York City Financial Network Action Consortium</agency>
+    <description>Loans for new business owners having difficulty getting financing through a traditional commercial bank.</description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Small Business Loans</title>
+    <url>http://www.nycfnac.org/leap/index.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>Long Island Transportation Management, Inc.</agency>
+    <description>Grants for Long Island employers to implement programs that reduce traffic congestion and pollution during peak commute-to-work hours. Money may be used for creating carpooling, telecommuting and public transportation incentive programs.</description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">1</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">0</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Grant</loan-type>
+    <state-name>New York</state-name>
+    <title>Long Island Region Improving Commuting Grant Program</title>
+    <url>http://www.4commute.com/employers/em_grant.htm</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>CommuterLink</agency>
+    <description>Grants of up to $10,000 may be used for anything from shuttle buses to bike racks to Internet access for teleworkers.</description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">1</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">0</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Grant</loan-type>
+    <state-name>New York</state-name>
+    <title>New York City Commute Enhancement (NYCCE) Grant </title>
+    <url>http://employers.commuterlink.com/incentives.php</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>The Veterans Loan Program provides loans for working capital, business acquisition and purchase of real estate, machinery and equipment are available under this program. This program can be combined with other financing offered by NYBDC&#8217;s lending partners as participants or as separate credit facilities. </description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">1</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Veterans Loan Program</title>
+    <url>http://www.nybdc.com/loans_veterans.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>Provides permanent financing for real estate purchase and improvement. </description>
+    <gov-type>Local</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Loans for Real Estate</title>
+    <url>http://www.nybdc.com/loans_buildings.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>NYBDC has financed a variety of different types of equipment for borrowers ranging from desks, chairs and computers, to industrial handling and manufacturer&#8217;s equipment, vehicles, construction equipment, printing presses, airplanes, barges, trains and more. </description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Loans for Equipment and Machinery</title>
+    <url>http://www.nybdc.com/loans_equipment.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>Provides refinancing loans for the purporses of reducing the interest rate and/or convert from a floating rate to a fixed rate; reducing the monthly payment by extending the loan maturity; converting short term debt to long term debt; and using the equity built up in fixed assets to provide cash for the growth of your business. </description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Loans for Refinancing Debt</title>
+    <url>http://www.nybdc.com/loans_refinancing.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>Provides financing for working capital needs.</description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Loans for Working Capital</title>
+    <url>http://www.nybdc.com/loans_capital.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>A privately-owned loan fund whose capital is available to promote the expansion and growth of businesses in New York's 51 participating Empire Zones.  Loans range from $30,000 to $300,000.</description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">1</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Statewide Zone Capital Corporation of New York</title>
+    <url>http://www.nybdc.com/loans_empire-zone.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>Provides loans from $50,000-$150,000 for working capital, real estate, leasehold improvements, machinery and equipment, relocation, debt refinancing and business acquisitions.</description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">1</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Micro Loan Program</title>
+    <url>http://www.nybdc.com/loans_microloans.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York City Financial Network Action Consortium</agency>
+    <description>Loans for new business owners having difficulty getting financing through a traditional commercial bank.</description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Small Business Loans</title>
+    <url>http://www.nycfnac.org/leap/index.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>The Veterans Loan Program provides loans for working capital, business acquisition and purchase of real estate, machinery and equipment are available under this program. This program can be combined with other financing offered by NYBDC&#8217;s lending partners as participants or as separate credit facilities. </description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">1</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Veterans Loan Program</title>
+    <url>http://www.nybdc.com/loans_veterans.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>Provides permanent financing for real estate purchase and improvement. </description>
+    <gov-type>Local</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Loans for Real Estate</title>
+    <url>http://www.nybdc.com/loans_buildings.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>NYBDC has financed a variety of different types of equipment for borrowers ranging from desks, chairs and computers, to industrial handling and manufacturer&#8217;s equipment, vehicles, construction equipment, printing presses, airplanes, barges, trains and more. </description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Loans for Equipment and Machinery</title>
+    <url>http://www.nybdc.com/loans_equipment.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>Provides refinancing loans for the purporses of reducing the interest rate and/or convert from a floating rate to a fixed rate; reducing the monthly payment by extending the loan maturity; converting short term debt to long term debt; and using the equity built up in fixed assets to provide cash for the growth of your business. </description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Loans for Refinancing Debt</title>
+    <url>http://www.nybdc.com/loans_refinancing.html</url>
+  </grant-loan>
+  <grant-loan>
+    <agency>New York Business Development Corporation</agency>
+    <description>Provides financing for working capital needs.</description>
+    <gov-type>State</gov-type>
+    <industry type="NilClass" nil="true"></industry>
+    <is-contractor type="integer">0</is-contractor>
+    <is-development type="integer">0</is-development>
+    <is-disabled type="integer">0</is-disabled>
+    <is-disaster type="integer">0</is-disaster>
+    <is-exporting type="integer">0</is-exporting>
+    <is-general-purpose type="integer">1</is-general-purpose>
+    <is-green type="integer">0</is-green>
+    <is-military type="integer">0</is-military>
+    <is-minority type="integer">0</is-minority>
+    <is-rural type="integer">0</is-rural>
+    <is-woman type="integer">0</is-woman>
+    <loan-type>Loan</loan-type>
+    <state-name>New York</state-name>
+    <title>Loans for Working Capital</title>
+    <url>http://www.nybdc.com/loans_capital.html</url>
+  </grant-loan>
+</grant-loans>
