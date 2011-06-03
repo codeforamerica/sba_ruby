@@ -1,0 +1,13 @@
+lib/sba.rb c1d456b97bab54e88531067025f7adcd5e469712
+lib/sba/client.rb 9b9f1c69faeece685488c675c5081e681ff29597
+lib/sba/version.rb 1bd4bb6c079f03f95d0abb14b9b7dccd63e8d6bb
+lib/sba/client/urls.rb 78918196da4140ae3a1358c71933686086d6cfac
+lib/sba/client/loans.rb 46ad3d4f4032b3437b1996c358a6b71c0a7adbf0
+lib/sba/client/sites.rb 96e2e965dd554d400b8105797f4676e7f61661ec
+lib/sba/configuration.rb 14844b2a96551dac6f9739f83878e5cae0f980ec
+lib/faraday/multipart.rb 1d6b5c4b386ddf49c5824ef474bb8575f189436e
+lib/sba/client/request.rb 49b18512531a9722c39df3fe23c14a8c90e7e02d
+lib/faraday/raise_error.rb 2972fa65e9a84b7496c870d9394a635536476e34
+lib/sba/client/licenses.rb 9fa2a3f94a143d88ee7dfcf2f3573c6ec9bba571
+lib/sba/client/connection.rb cc0f4ad2b3b05d9955d990965da41f0a7db32a6b
+lib/faraday/response/raise_error.rb 0b68795b6a54dea2bfea97a61e45775b86b1408d

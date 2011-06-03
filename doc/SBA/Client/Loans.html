@@ -1,0 +1,1407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: SBA::Client::Loans
+  
+    &mdash; Documentation by YARD 0.7.1
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '../..';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (L)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../../SBA.html" title="SBA (module)">SBA</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Client.html" title="SBA::Client (class)">Client</a></span></span>
+     &raquo; 
+    <span class="title">Loans</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Module: SBA::Client::Loans
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+      <dt class="r1">Includes:</dt>
+      <dd class="r1"><span class='object_link'><a href="Connection.html" title="SBA::Client::Connection (module)">Connection</a></span></dd>
+      
+    
+  
+  
+    <dt class="r2">Included in:</dt>
+    <dd class="r2"><span class='object_link'><a href="../Client.html" title="SBA::Client (class)">SBA::Client</a></span></dd>
+    
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/sba/client/loans.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+  
+  
+  
+  
+
+
+  
+  
+  
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loan_grants_by_federal-instance_method" title="#loan_grants_by_federal (instance method)">- (Hash) <strong>loan_grants_by_federal</strong>(options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns financing programs available from Federal government agencies and
+select non-profit organizations nationwide.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loan_grants_by_federal_state-instance_method" title="#loan_grants_by_federal_state (instance method)">- (Hash) <strong>loan_grants_by_federal_state</strong>(state, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns all small business financing programs sponsored by federal and
+state government agencies and selected non-profit and commercial
+organizations.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loan_grants_by_industry-instance_method" title="#loan_grants_by_industry (instance method)">- (Hash) <strong>loan_grants_by_industry</strong>(industry, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns all small business financing programs for a specific industry in
+all 54 states and territories (when available).
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loan_grants_by_industry_specialty-instance_method" title="#loan_grants_by_industry_specialty (instance method)">- (Hash) <strong>loan_grants_by_industry_specialty</strong>(industry, specialty, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns financing programs for specific industries AND specific business
+groups (e.g., women, veterans, minorities, etc.); or business activities
+(e.g., export, energy efficiency, disaster assistance, etc.).
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loan_grants_by_specialty-instance_method" title="#loan_grants_by_specialty (instance method)">- (Hash) <strong>loan_grants_by_specialty</strong>(specialty, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns small business special financing programs for certain business
+owner groups (e.g., women, veterans, minorities, etc.); or business
+activities (e.g., export, energy efficiency, disaster assistance, etc.).
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loan_grants_by_state-instance_method" title="#loan_grants_by_state (instance method)">- (Hash) <strong>loan_grants_by_state</strong>(state, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns all small business financing programs sponsored by state government
+agencies and select non-profit and commercial organizations.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loan_grants_by_state_industry-instance_method" title="#loan_grants_by_state_industry (instance method)">- (Hash) <strong>loan_grants_by_state_industry</strong>(state, industry, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns all small business financing programs for a specific industry in a
+specific state.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loan_grants_by_state_industry_specialty-instance_method" title="#loan_grants_by_state_industry_specialty (instance method)">- (Hash) <strong>loan_grants_by_state_industry_specialty</strong>(state, industry, specialty, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns state programs by industry and specific business groups or
+specialized business activities.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#loan_grants_by_state_specialty-instance_method" title="#loan_grants_by_state_specialty (instance method)">- (Hash) <strong>loan_grants_by_state_specialty</strong>(state, specialty, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Returns state programs for specific business groups or specialized business
+activities.
+</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="loan_grants_by_federal-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>loan_grants_by_federal</strong>(options = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns financing programs available from Federal government agencies and
+select non-profit organizations nationwide.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code"><span class='const'>SBA</span><span class='period'>.</span><span class='id loan_grants_by_federal'>loan_grants_by_federal</span>   </pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>
+A customizable set of options.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="http://www.sba.gov/content/loans-grants-search-api-federal-program-method" target="_parent" title="http://www.sba.gov/content/loans-grants-search-api-federal-program-method">http://www.sba.gov/content/loans-grants-search-api-federal-program-method</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sba/client/loans.rb', line 16</span>
+
+<span class='kw'>def</span> <span class='id loan_grants_by_federal'>loan_grants_by_federal</span><span class='lparen'>(</span><span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id response'>response</span> <span class='op'>=</span> <span class='id get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>loans_grants/federal.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="loan_grants_by_federal_state-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>loan_grants_by_federal_state</strong>(state, options = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns all small business financing programs sponsored by federal and
+state government agencies and selected non-profit and commercial
+organizations.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code"><span class='const'>SBA</span><span class='period'>.</span><span class='id loan_grants_by_federal_state'>loan_grants_by_federal_state</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ca</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span></pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>state</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input the two leter postal code for the state abbreviation
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>
+A customizable set of options.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="http://www.sba.gov/content/loans-grants-search-api-federal-and-state-specific-method" target="_parent" title="http://www.sba.gov/content/loans-grants-search-api-federal-and-state-specific-method">http://www.sba.gov/content/loans-grants-search-api-federal-and-state-specific-method</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sba/client/loans.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id loan_grants_by_federal_state'>loan_grants_by_federal_state</span><span class='lparen'>(</span><span class='id state'>state</span><span class='comma'>,</span> <span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id response'>response</span> <span class='op'>=</span> <span class='id get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>loans_grants/federal_and_state_financing_for/</span><span class='embexpr_beg'>#{</span><span class='id state'>state</span><span class='rbrace'>}</span><span class='tstring_content'>.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="loan_grants_by_industry-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>loan_grants_by_industry</strong>(industry, options = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns all small business financing programs for a specific industry in
+all 54 states and territories (when available).
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code"><span class='const'>SBA</span><span class='period'>.</span><span class='id loan_grants_by_industry'>loan_grants_by_industry</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Technology</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span></pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>industry</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input one of the standard industry values: Agriculture,Child
+Care,Environmental Management,Health Care,Manufacturing,Technology,Tourism
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>
+A customizable set of options.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="http://www.sba.gov/content/loans-grants-search-api-industry-method" target="_parent" title="http://www.sba.gov/content/loans-grants-search-api-industry-method">http://www.sba.gov/content/loans-grants-search-api-industry-method</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sba/client/loans.rb', line 52</span>
+
+<span class='kw'>def</span> <span class='id loan_grants_by_industry'>loan_grants_by_industry</span><span class='lparen'>(</span><span class='id industry'>industry</span><span class='comma'>,</span> <span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id response'>response</span> <span class='op'>=</span> <span class='id get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>loans_grants/nil/for_profit/</span><span class='embexpr_beg'>#{</span><span class='id industry'>industry</span><span class='rbrace'>}</span><span class='tstring_content'>/nil.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="loan_grants_by_industry_specialty-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>loan_grants_by_industry_specialty</strong>(industry, specialty, options = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns financing programs for specific industries AND specific business
+groups (e.g., women, veterans, minorities, etc.); or business activities
+(e.g., export, energy efficiency, disaster assistance, etc.).
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code">SBA.loan_grants_by_industry_specialty(&quot;technology&quot;, &quot;contractor&quot;)
+SBA.loan_grants_by_industry_specialty(&quot;technology, &quot;general_purpose-rural&quot;)      </pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>industry</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input one or more of the standard industry values
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>specialty</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input one or more of the stanard industry values
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>
+A customizable set of options.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="http://www.sba.gov/content/loans-grants-search-api-industry-and-specialty-method" target="_parent" title="http://www.sba.gov/content/loans-grants-search-api-industry-and-specialty-method">http://www.sba.gov/content/loans-grants-search-api-industry-and-specialty-method</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80
+81</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sba/client/loans.rb', line 79</span>
+
+<span class='kw'>def</span> <span class='id loan_grants_by_industry_specialty'>loan_grants_by_industry_specialty</span><span class='lparen'>(</span><span class='id industry'>industry</span><span class='comma'>,</span> <span class='id specialty'>specialty</span><span class='comma'>,</span> <span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id response'>response</span> <span class='op'>=</span> <span class='id get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>loans_grants/nil/for_profit/</span><span class='embexpr_beg'>#{</span><span class='id industry'>industry</span><span class='rbrace'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='id specialty'>specialty</span><span class='rbrace'>}</span><span class='tstring_content'>.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="loan_grants_by_specialty-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>loan_grants_by_specialty</strong>(specialty, options = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns small business special financing programs for certain business
+owner groups (e.g., women, veterans, minorities, etc.); or business
+activities (e.g., export, energy efficiency, disaster assistance, etc.).
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code"><span class='const'>SBA</span><span class='period'>.</span><span class='id loan_grants_by_specialty'>loan_grants_by_specialty</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>general_purpose</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='const'>SBA</span><span class='period'>.</span><span class='id loan_grants_by_specialty'>loan_grants_by_specialty</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>general_purpose-rural</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span></pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>industry</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input one or more of the standard industry values
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>
+A customizable set of options.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="http://www.sba.gov/content/loans-grants-search-api-specialty-method" target="_parent" title="http://www.sba.gov/content/loans-grants-search-api-specialty-method">http://www.sba.gov/content/loans-grants-search-api-specialty-method</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+65
+66
+67</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sba/client/loans.rb', line 65</span>
+
+<span class='kw'>def</span> <span class='id loan_grants_by_specialty'>loan_grants_by_specialty</span><span class='lparen'>(</span><span class='id specialty'>specialty</span><span class='comma'>,</span> <span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id response'>response</span> <span class='op'>=</span> <span class='id get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>loans_grants/nil/for_profit/nil/</span><span class='embexpr_beg'>#{</span><span class='id specialty'>specialty</span><span class='rbrace'>}</span><span class='tstring_content'>.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="loan_grants_by_state-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>loan_grants_by_state</strong>(state, options = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns all small business financing programs sponsored by state government
+agencies and select non-profit and commercial organizations.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code"><span class='const'>SBA</span><span class='period'>.</span><span class='id loan_grants_by_state'>loan_grants_by_state</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ca</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>     </pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>state</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input the two leter postal code for the state abbreviation
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>
+A customizable set of options.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="http://www.sba.gov/content/loans-grants-search-api-programs-specific-state-method" target="_parent" title="http://www.sba.gov/content/loans-grants-search-api-programs-specific-state-method">http://www.sba.gov/content/loans-grants-search-api-programs-specific-state-method</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29
+30</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sba/client/loans.rb', line 28</span>
+
+<span class='kw'>def</span> <span class='id loan_grants_by_state'>loan_grants_by_state</span><span class='lparen'>(</span><span class='id state'>state</span><span class='comma'>,</span> <span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id response'>response</span> <span class='op'>=</span> <span class='id get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>loans_grants/state_financing_for/</span><span class='embexpr_beg'>#{</span><span class='id state'>state</span><span class='rbrace'>}</span><span class='tstring_content'>.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="loan_grants_by_state_industry-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>loan_grants_by_state_industry</strong>(state, industry, options = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns all small business financing programs for a specific industry in a
+specific state.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code"><span class='const'>SBA</span><span class='period'>.</span><span class='id loan_grants_by_state_industry'>loan_grants_by_state_industry</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ca</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>technology</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>   </pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>state</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input the two leterl postal code for state abbreviation
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>industry</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input one or more of the standard industry values
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>
+A customizable set of options.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="http://www.sba.gov/content/loans-grants-search-api-state-and-industry-method" target="_parent" title="http://www.sba.gov/content/loans-grants-search-api-state-and-industry-method">http://www.sba.gov/content/loans-grants-search-api-state-and-industry-method</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+92
+93
+94</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sba/client/loans.rb', line 92</span>
+
+<span class='kw'>def</span> <span class='id loan_grants_by_state_industry'>loan_grants_by_state_industry</span><span class='lparen'>(</span><span class='id state'>state</span><span class='comma'>,</span> <span class='id industry'>industry</span><span class='comma'>,</span> <span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id response'>response</span> <span class='op'>=</span> <span class='id get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>loans_grants/</span><span class='embexpr_beg'>#{</span><span class='id state'>state</span><span class='rbrace'>}</span><span class='tstring_content'>/for_profit/</span><span class='embexpr_beg'>#{</span><span class='id industry'>industry</span><span class='rbrace'>}</span><span class='tstring_content'>/nil.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="loan_grants_by_state_industry_specialty-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>loan_grants_by_state_industry_specialty</strong>(state, industry, specialty, options = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns state programs by industry and specific business groups or
+specialized business activities.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code"><span class='const'>SBA</span><span class='period'>.</span><span class='id loan_grants_by_state_industry_specialty'>loan_grants_by_state_industry_specialty</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ca</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>tecnology</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>development</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span></pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>state</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input the two leterl postal code for state abbreviation
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>industry</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input one or more of the standard industry values
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>specialty</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input one or more of the stanard industry values
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>
+A customizable set of options.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="http://www.sba.gov/content/loans-grants-search-api-state-industry-and-specialty-method" target="_parent" title="http://www.sba.gov/content/loans-grants-search-api-state-industry-and-specialty-method">http://www.sba.gov/content/loans-grants-search-api-state-industry-and-specialty-method</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+119
+120
+121</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sba/client/loans.rb', line 119</span>
+
+<span class='kw'>def</span> <span class='id loan_grants_by_state_industry_specialty'>loan_grants_by_state_industry_specialty</span><span class='lparen'>(</span><span class='id state'>state</span><span class='comma'>,</span> <span class='id industry'>industry</span><span class='comma'>,</span> <span class='id specialty'>specialty</span><span class='comma'>,</span> <span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id response'>response</span> <span class='op'>=</span> <span class='id get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>loans_grants/</span><span class='embexpr_beg'>#{</span><span class='id state'>state</span><span class='rbrace'>}</span><span class='tstring_content'>/for_profit/</span><span class='embexpr_beg'>#{</span><span class='id industry'>industry</span><span class='rbrace'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='id specialty'>specialty</span><span class='rbrace'>}</span><span class='tstring_content'>.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="loan_grants_by_state_specialty-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>loan_grants_by_state_specialty</strong>(state, specialty, options = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Returns state programs for specific business groups or specialized business
+activities.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h3>Examples:</h3>
+    
+      <h4><div class='inline'></div></h4>
+      <pre class="example code"><span class='const'>SBA</span><span class='period'>.</span><span class='id loan_grants_by_state_specialty'>loan_grants_by_state_specialty</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ca</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>development</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span></pre>
+    
+  </div>
+<h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>state</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input the two leterl postal code for state abbreviation
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>specialty</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+input one or more of the stanard industry values
+</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>
+A customizable set of options.
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <h3>See Also:</h3>
+  <ul class="see">
+    
+      <li><a href="http://www.sba.gov/content/loans-grants-search-api-state-and-specialty-method" target="_parent" title="http://www.sba.gov/content/loans-grants-search-api-state-and-specialty-method">http://www.sba.gov/content/loans-grants-search-api-state-and-specialty-method</a></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+105
+106
+107</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sba/client/loans.rb', line 105</span>
+
+<span class='kw'>def</span> <span class='id loan_grants_by_state_specialty'>loan_grants_by_state_specialty</span><span class='lparen'>(</span><span class='id state'>state</span><span class='comma'>,</span> <span class='id specialty'>specialty</span><span class='comma'>,</span> <span class='id options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id response'>response</span> <span class='op'>=</span> <span class='id get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>loans_grants/</span><span class='embexpr_beg'>#{</span><span class='id state'>state</span><span class='rbrace'>}</span><span class='tstring_content'>/for_profit/nil/</span><span class='embexpr_beg'>#{</span><span class='id specialty'>specialty</span><span class='rbrace'>}</span><span class='tstring_content'>.json</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Fri Jun  3 14:15:00 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.1 (ruby-1.9.2).
+</div>
+
+  </body>
+</html>
