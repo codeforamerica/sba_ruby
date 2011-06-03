@@ -100,8 +100,8 @@ describe SBA do
     it "should return the correct results" do
       test = SBA.loan_grants_by_specialty("woman")
       test.should be_an Array
-      test[0]["title"].should == "Minority, Women, and Disabled Participation Loan Program"
-      test[1]["title"].should == "Community Loans for Women, Minority-Owned and Non Profit Businesses"
+      test[0]["title"].should == "Delaware Access Program"
+      test[1]["title"].should == "Minority, Women, and Disabled Participation Loan Program"
     end
   end
 
