@@ -6,17 +6,14 @@ module SBA
     module Loans
     include SBA::Client::Connection
       def loan_grants_by_federal(options={})
-        options.merge!({:format=> "json"})
         response = get("loans_grants/federal.json")
       end
       
       def loan_grants_by_state(state, options={})
-        options.merge!({:format=> "json"})
         response = get("loans_grants/state_financing_for/#{state}.json")
       end
       
       def loan_grants_by_federal_state(state, options={})
-        options.merge!({:format=> "json"})
         response = get("loans_grants/federal_and_state_financing_for/#{state}.json")
       end
 
