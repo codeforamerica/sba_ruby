@@ -16,6 +16,10 @@ module SBA
       def loan_grants_by_federal_state(state, options={})
         response = get("loans_grants/federal_and_state_financing_for/#{state}.json")
       end
+      
+      def loan_grants_by_industry(industry, options={})
+        response = get("loans_grants/nil/for_profit/#{industry}/nil.json")
+      end
 
     end
   end
