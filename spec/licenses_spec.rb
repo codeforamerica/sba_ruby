@@ -80,8 +80,7 @@ describe SBA do
       it "should return the correct results" do
         test = SBA.business_type_state("child care services", "va")
         test.should be_an Array
-        test[0]["url"].should == "http://www.vec.virginia.gov/vecportal/unins/insunemp.cfm"
-        test[1]["url"].should == "http://www.vwc.state.va.us/employers_guide.htm"
+        test[0]["url"].should == "http://www.dss.virginia.gov/facility/child_care/licensed/child_day_centers/index.cgi"
       end
     end
   
