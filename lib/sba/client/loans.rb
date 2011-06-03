@@ -14,7 +14,7 @@ module SBA
       # @example
       #   SBA.loan_grants_by_federal   
       def loan_grants_by_federal(options={})
-        response = get("loans_grants/federal.json")
+        response = get("loans_grants/federal.json", options)
       end
 
       # Returns all small business financing programs sponsored by state government agencies and select non-profit and commercial organizations.
@@ -26,7 +26,7 @@ module SBA
       # @example
       #   SBA.loan_grants_by_state("ca")     
       def loan_grants_by_state(state, options={})
-        response = get("loans_grants/state_financing_for/#{state}.json")
+        response = get("loans_grants/state_financing_for/#{state}.json", options)
       end
       
       # Returns all small business financing programs sponsored by federal and state government agencies and selected non-profit and commercial organizations.
@@ -38,7 +38,7 @@ module SBA
       # @example
       #   SBA.loan_grants_by_federal_state("ca")
       def loan_grants_by_federal_state(state, options={})
-        response = get("loans_grants/federal_and_state_financing_for/#{state}.json")
+        response = get("loans_grants/federal_and_state_financing_for/#{state}.json", options)
       end
       
       # Returns all small business financing programs for a specific industry in all 54 states and territories (when available).
@@ -50,7 +50,7 @@ module SBA
       # @example
       #   SBA.loan_grants_by_industry("Technology")
       def loan_grants_by_industry(industry, options={})
-        response = get("loans_grants/nil/for_profit/#{industry}/nil.json")
+        response = get("loans_grants/nil/for_profit/#{industry}/nil.json", options)
       end
       
       # Returns small business special financing programs for certain business owner groups (e.g., women, veterans, minorities, etc.); or business activities (e.g., export, energy efficiency, disaster assistance, etc.).
@@ -63,7 +63,7 @@ module SBA
       #   SBA.loan_grants_by_specialty("general_purpose")
       #   SBA.loan_grants_by_specialty("general_purpose-rural")
       def loan_grants_by_specialty(specialty, options={})
-        response = get("loans_grants/nil/for_profit/nil/#{specialty}.json")
+        response = get("loans_grants/nil/for_profit/nil/#{specialty}.json", options)
       end
       
       # Returns financing programs for specific industries AND specific business groups (e.g., women, veterans, minorities, etc.); or business activities (e.g., export, energy efficiency, disaster assistance, etc.).
@@ -77,7 +77,7 @@ module SBA
       #   SBA.loan_grants_by_industry_specialty("technology", "contractor")
       #   SBA.loan_grants_by_industry_specialty("technology, "general_purpose-rural")      
       def loan_grants_by_industry_specialty(industry, specialty, options={})
-        response = get("loans_grants/nil/for_profit/#{industry}/#{specialty}.json")
+        response = get("loans_grants/nil/for_profit/#{industry}/#{specialty}.json", options)
       end
       
       # Returns all small business financing programs for a specific industry in a specific state.
@@ -90,7 +90,7 @@ module SBA
       # @example
       #   SBA.loan_grants_by_state_industry("ca", "technology")   
       def loan_grants_by_state_industry(state, industry, options={})
-        response = get("loans_grants/#{state}/for_profit/#{industry}/nil.json")
+        response = get("loans_grants/#{state}/for_profit/#{industry}/nil.json", options)
       end
 
       # Returns state programs for specific business groups or specialized business activities.
@@ -103,7 +103,7 @@ module SBA
       # @example
       #   SBA.loan_grants_by_state_specialty("ca", "development")
       def loan_grants_by_state_specialty(state, specialty, options={})
-        response = get("loans_grants/#{state}/for_profit/nil/#{specialty}.json")
+        response = get("loans_grants/#{state}/for_profit/nil/#{specialty}.json", options)
       end
       
       # Returns state programs by industry and specific business groups or specialized business activities.
@@ -117,7 +117,7 @@ module SBA
       # @example
       #   SBA.loan_grants_by_state_industry_specialty("ca","tecnology","development")
       def loan_grants_by_state_industry_specialty(state, industry, specialty, options={})
-        response = get("loans_grants/#{state}/for_profit/#{industry}/#{specialty}.json")
+        response = get("loans_grants/#{state}/for_profit/#{industry}/#{specialty}.json", options)
       end
 
     end
