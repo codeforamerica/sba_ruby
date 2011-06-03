@@ -92,15 +92,15 @@ describe SBA do
                      :headers => {'Content-Type' => 'application/json'})
        end
        it "should request the correct resource" do
-         SBA.business_type_state_county("child care services", "ca", "log angeles")
+         SBA.business_type_state_county("child care services", "ca", "los angeles county")
          a_request(:get, 'http://api.sba.gov/license_permit/state_and_county/child%20care%20services/ca/los%20angeles%20county.json').
            with().
            should have_been_made
        end
        it "should return the correct results" do
-         test = SBA.business_type_state_county("child care services", "ca", "log angeles")
+         test = SBA.business_type_state_county("child care services", "ca", "los angeles county")
          test.should be_an Array
-         test[0]["url"].should == "http://ttc.lacounty.gov/Proptax/Business_License.htm"
+         test["state_site"][0]["url"].should == "http://www.edd.ca.gov/Disability/"
        end
      end
 end
