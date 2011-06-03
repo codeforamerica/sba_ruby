@@ -35,6 +35,11 @@ module SBA
         simplify_response(response)
       end
       
+      def by_business_type(business, options={})
+        response = get("license_permit/by_business_type/#{business}.json", options)
+        simplify_response(response)
+      end
+      
     end
   end
 end
