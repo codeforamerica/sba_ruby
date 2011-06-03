@@ -113,16 +113,16 @@ describe SBA do
                   :headers => {'Content-Type' => 'application/json'})
     end
     it "should request the correct resource" do
-      SBA.loan_grants_by_industy_specialty("manufacturing","woman")
+      SBA.loan_grants_by_industry_specialty("manufacturing","woman")
       a_request(:get, 'http://api.sba.gov/loans_grants/nil/for_profit/manufacturing/woman.json').
         with().
         should have_been_made
     end
     it "should return the correct results" do
-      test = SBA.loan_grants_by_industy_specialty("manufacturing","woman")
+      test = SBA.loan_grants_by_industry_specialty("manufacturing","woman")
       test.should be_an Array
-      test[0]["title"].should == "Minority, Women, and Disabled Participation Loan Program"
-      test[1]["title"].should == "Target Small Business Assistance Program"
+      test[0]["title"].should == "Delaware Access Program"
+      test[1]["title"].should == "Minority, Women, and Disabled Participation Loan Program"
     end
   end
 
