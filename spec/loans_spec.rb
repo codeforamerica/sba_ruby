@@ -62,5 +62,28 @@ describe SBA do
       test[1]["title"].should == "Economic Injury Loans"
     end
   end
+
+  describe "loan_grants_by_industry" do
+    before do
+      stub_request(:get, 'http://api.sba.gov/loans_grants/nil/for_profit/manufacturing/nil.json').
+        with().
+        to_return(:body => fixture('loan_grants_industry.json'),
+                  :headers => {'Content-Type' => 'application/json'})
+    end
+    it "should request the correct resource" do
+      SBA.loan_grants_by_industry("manufacturing")
+      a_request(:get, 'http://api.sba.gov/loans_grants/nil/for_profit/manufacturing/nil.json').
+        with().
+        should have_been_made
+    end
+    it "should return the correct results" do
+      test = SBA.loan_grants_by_industry("manufacturing")
+      test.should be_an Array
+      test[0]["title"].should == "Small Manufacturers Competitiveness Fund (SMCF)"
+      test[1]["title"].should == "Manufacturing Modernization Loan Program "
+    end
+  end  
+  
+  
 end
 
