@@ -176,7 +176,7 @@ describe SBA do
                   :headers => {'Content-Type' => 'application/json'})
     end
     it "should request the correct resource" do
-      SBA.loan_grants_by_state_industy_specialty("me","manufacturing", "woman")
+      SBA.loan_grants_by_state_industry_specialty("me","manufacturing", "woman")
       a_request(:get, 'http://api.sba.gov/loans_grants/me/for_profit/manufacturing/woman.json').
         with().
         should have_been_made
