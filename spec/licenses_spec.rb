@@ -63,5 +63,26 @@ describe SBA do
        test[1]["url"].should == "http://www.azdhs.gov/als/childcare/"
      end
    end
+   
+   describe "#business_type_state" do
+      before do
+        stub_request(:get, 'http://api.sba.gov/license_permit/state_only/child%20care%20services/va.json').
+          with().
+          to_return(:body => fixture('business_type_state.json'),
+                    :headers => {'Content-Type' => 'application/json'})
+      end
+      it "should request the correct resource" do
+        SBA.business_type_state("child care services", "va")
+        a_request(:get, 'http://api.sba.gov/license_permit/state_only/child%20care%20services/va.json').
+          with().
+          should have_been_made
+      end
+      it "should return the correct results" do
+        test = SBA.business_type_state("child care services", "va")
+        test.should be_an Array
+        test[0]["url"].should == "http://www.vec.virginia.gov/vecportal/unins/insunemp.cfm"
+        test[1]["url"].should == "http://www.vwc.state.va.us/employers_guide.htm"
+      end
+    end
   
 end
