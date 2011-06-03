@@ -42,4 +42,26 @@ describe SBA do
       test[0]["title"].should == "Obtain Disability Insurance"
     end
   end
+
+  describe "#by_business_type" do
+     before do
+       stub_request(:get, 'http://api.sba.gov/license_permit/by_business_type/child%20care%20services.json').
+         with().
+         to_return(:body => fixture('by_business_type.json'),
+                   :headers => {'Content-Type' => 'application/json'})
+     end
+     it "should request the correct resource" do
+       SBA.by_business_type("child care services")
+       a_request(:get, 'http://api.sba.gov/license_permit/by_business_type/child%20care%20services.json').
+         with().
+         should have_been_made
+     end
+     it "should return the correct results" do
+       test = SBA.by_business_type("child care services")
+       test.should be_an Array
+       test[0]["url"].should == "http://health.utah.gov/licensing/"
+       test[1]["url"].should == "http://jfs.ohio.gov/cdc/page2.stm"
+     end
+   end
+  
 end
