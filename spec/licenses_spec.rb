@@ -79,8 +79,8 @@ describe SBA do
       end
       it "should return the correct results" do
         test = SBA.business_type_state("child care services", "va")
-        test.should be_an Array
-        test[0]["url"].should == "http://www.dss.virginia.gov/facility/child_care/licensed/child_day_centers/index.cgi"
+        test.should be_an Hash
+        test["state_site"][0]["url"].should == "http://www.vec.virginia.gov/vecportal/unins/insunemp.cfm"
       end
     end
     
@@ -99,7 +99,7 @@ describe SBA do
        end
        it "should return the correct results" do
          test = SBA.business_type_state_county("child care services", "ca", "los angeles county")
-         test.should be_an Array
+         test.should be_an Hash
          test["state_site"][0]["url"].should == "http://www.edd.ca.gov/Disability/"
        end
      end
