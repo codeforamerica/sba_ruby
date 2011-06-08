@@ -38,8 +38,8 @@ describe SBA do
     end
     it "should return the correct results" do
       test = SBA.by_state("CA")
-      test.should be_a Array
-      test[0]["title"].should == "Obtain Disability Insurance"
+      test.should be_a Hash
+      test["state_site"][0]["title"].should == "Obtain Disability Insurance"
     end
   end
 
