@@ -14,7 +14,7 @@ describe SBA, ".all_sites" do
 
   it "should return the correct results" do
     test = SBA.all_sites()
-    test.should be_an Array
-    test[0]["title"].should == "Changing a Business Name"
+    test.should be_a Hash
+    test["recommended_sites_item150"][0]["title"] == "Tax Help and Training"
   end
 end
