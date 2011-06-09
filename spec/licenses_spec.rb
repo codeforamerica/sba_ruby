@@ -58,9 +58,9 @@ describe SBA do
      end
      it "should return the correct results" do
        test = SBA.by_business_type("child care services")
-       test.should be_an Array
-       test[0]["url"].should == "http://www.hss.state.ak.us/dpa/programs/ccare/become_a_provider.htm"
-       test[1]["url"].should == "http://www.azdhs.gov/als/childcare/"
+       test.should be_an Hash
+       test["business_type_site"][0]["url"].should == "http://www.hss.state.ak.us/dpa/programs/ccare/become_a_provider.htm"
+       test["business_type_site"][1]["url"].should == "http://www.azdhs.gov/als/childcare/"
      end
    end
    
