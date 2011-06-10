@@ -14,14 +14,17 @@ module SBA
     # @example Returns recommended sites for keywords and phrases
     #   SBA.all_sites
     def all_sites(options={})
-      response = get('rec_sites/all_sites/keywords.json', options)
+      response = get("rec_sites/all_sites/keywords.json", options)
       #simplify_response(response)
     end
     
     def sites_by_keyword(keyword, options={})
-      response = get('rec_sites/keywords/contracting.json', options)
+      response = get("rec_sites/keywords/#{keyword}.json", options)
     end
-
+    
+    def sites_by_category(category, options={})
+      response = get("rec_sites/category/#{category}.json", options)
+    end
 
     end
   end
