@@ -68,6 +68,14 @@ module SBA
         response = get("geodata/primary_links_for_county_of/#{county}/#{state}.json", options)
       end
       
+      # Returns All City and County URLS in a State
+      #
+      # @param state [String] The two letter postal code for the state abbreviation.
+      # @param options [Hash] A customizable set of options.
+      # @return {Hash}
+      # @see http://www.sba.gov/content/us-city-and-county-web-data-api-city-county-data-all-urls
+      # @example
+      #   SBA.all_urls_for_city_county("ca")
       def all_urls_city_county(state, options={})
         response = get("geodata/city_county_links_for_state_of/#{state}.json", options)
       end
