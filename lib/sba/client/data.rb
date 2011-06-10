@@ -29,6 +29,10 @@ module SBA
       def data_city(state, options={})
         response = get("geodata/city_data_for_state_of/#{state}.json", options)
       end
+      
+      def data_county(state, options={})
+        response = get("geodata/county_data_for_state_of/#{state}.json", options)
+      end
     end
   end
 end
