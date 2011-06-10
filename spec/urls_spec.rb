@@ -164,7 +164,7 @@ describe SBA do
     it "should get the correct data" do
       result = SBA.all_urls_specific_city('dallas','tx')
       result[0]['url'].should == 'http://www.dallascityhall.com/'
-      result[2]['county_name'].should == 'Dallas'
+      result[1]['county_name'].should == 'Dallas'
     end
   end
 end

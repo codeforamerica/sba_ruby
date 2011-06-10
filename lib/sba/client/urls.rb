@@ -103,6 +103,10 @@ module SBA
       def all_urls_county(state, options={})
         response = get("geodata/county_links_for_state_of/#{state}.json", options)
       end
+      
+      def all_urls_specific_city(city, state, options={})
+        response = get("geodata/all_links_for_city_of/#{city}/#{state}.json", options)
+      end
     end
   end
 end
