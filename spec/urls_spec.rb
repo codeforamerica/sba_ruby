@@ -149,4 +149,22 @@ describe SBA do
       result[1]['url'].should == 'http://www.alpinecountyca.gov/'
     end
   end
+  describe ".all_urls_specific_city" do
+    before do
+      stub_request(:get, 'http://api.sba.gov/geodata/all_links_for_city_of/dallas/tx.json').
+        with().
+        to_return(:body => fixture('url_specific_city.json'))
+    end
+    it "should request the correct resource" do
+      SBA.all_urls_specific_city('dallas','tx')
+      a_request(:get, 'http://api.sba.gov/geodata/all_links_for_city_of/dallas/tx.json').
+        with().
+        should have_been_made
+    end
+    it "should get the correct data" do
+      result = SBA.all_urls_specific_city('dallas','tx')
+      result[0]['url'].should == 'http://www.dallascityhall.com/'
+      result[2]['county_name'].should == 'Dallas'
+    end
+  end
 end
