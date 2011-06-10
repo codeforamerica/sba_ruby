@@ -53,7 +53,15 @@ module SBA
       def sites_by_master_term(term, options={})
         response = get("rec_sites/keywords/master_term/#{term}.json", options)
       end
-    
+
+      # Returns all recommended sites belonging to a specific domain
+      #
+      # @param domain [String] Domain name without the www or .com, .gov, .net
+      # @param options [Hash] A customizable set of options.
+      # @return {Hash}
+      # @see http://www.sba.gov/about-sba-services/7630#category
+      # @example
+      #   SBA.sites_by_domain("irs")    
       def sites_by_domain(domain, options={})
         response = get("rec_sites/keywords/domain/#{domain}.json", options)
       end
