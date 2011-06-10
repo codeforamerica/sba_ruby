@@ -29,6 +29,10 @@ module SBA
     def sites_by_master_term(term, options={})
       response = get("rec_sites/keywords/master_term/#{term}.json", options)
     end
+    
+    def sites_by_domain(domain, options={})
+      response = get("rec_sites/keywords/domain/#{domain}.json", options)
+    end
 
     end
   end
