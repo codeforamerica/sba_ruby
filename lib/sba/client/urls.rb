@@ -79,6 +79,10 @@ module SBA
       def all_urls_city_county(state, options={})
         response = get("geodata/city_county_links_for_state_of/#{state}.json", options)
       end
+      
+      def all_urls_city(state, options={})
+        response = get("geodata/city_links_for_state_of/#{state}.json", options)
+      end
     end
   end
 end
