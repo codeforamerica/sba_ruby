@@ -95,4 +95,22 @@ describe SBA do
       result[1]['url'].should == 'http://www.cityofwinterville.com/'
     end
   end
+  describe ".all_urls_city_county" do
+    before do
+      stub_request(:get, 'http://api.sba.gov/geodata/city_county_links_for_state_of/ca.json').
+        with().
+        to_return(:body => fixture('url_city_county.json'))
+    end
+    it "should request the correct resource" do
+      SBA.all_urls_city_county('ca')
+      a_request(:get, 'http://api.sba.gov/geodata/city_county_links_for_state_of/ca.json').
+        with().
+        should have_been_made
+    end
+    it "should get the correct data" do
+      result = SBA.all_urls_city_county('ca')
+      result[0]['url'].should == 'http://www.ci.adelanto.ca.us/'
+      result[1]['url'].should == 'http://ci.agoura-hills.ca.us/'
+    end
+  end
 end
