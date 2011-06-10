@@ -92,6 +92,11 @@ module SBA
         simplify_response(response)
       end
       
+      def business_type_zip(business, zip, options={})
+        response = get("license_permit/by_zip/#{business}/#{zip}.json")
+        simplify_response(response)
+      end
+      
     end
   end
 end
