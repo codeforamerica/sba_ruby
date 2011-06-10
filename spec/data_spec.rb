@@ -97,7 +97,7 @@ describe SBA do
       test = SBA.data_specific_county('frederick county', 'md')
       test.should be_an Array
       test[0]["url"].should == "http://www.brunswickmd.gov/"
-      test[1]["url"].should == "http://www.emmitsburg.net/towngov/"
+      test[2]["url"].should == "http://www.emmitsburg.net/towngov/"
     end
   end
 end

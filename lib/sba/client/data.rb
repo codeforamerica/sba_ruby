@@ -55,6 +55,10 @@ module SBA
         response = get("geodata/all_data_for_city_of/#{city}/#{state}.json", options)
       end
       
+      def data_specific_county(county, state, options={})
+        response = get("geodata/all_data_for_county_of/#{county}/#{state}.json", options)
+      end
+      
     end
   end
 end
