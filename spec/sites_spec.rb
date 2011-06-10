@@ -19,21 +19,23 @@ describe SBA, ".all_sites" do
   end
 end
 
-describe SBA, ".sites_by_keyword" do
+describe ".search_by_keywords" do
   before do
-    stub_request(:get, 'http://api.sba.gov/rec_sites/keyword/contracting.json').
-      to_return(:body => fixture('rec_sites_keyword.json'), :headers => {'Content-Type' => 'text/json; charset=utf-8'})
+    stub_request(:get, 'http://api.sba.gov/rec_sites/keywords/contracting.json').
+      with().
+      to_return(:body => fixture('rec_sites_keyword.json'),
+                :headers => {'Content-Type' => 'application/json'})
   end
-
   it "should request the correct resource" do
     SBA.sites_by_keyword("contracting")
     a_request(:get, 'http://api.sba.gov/rec_sites/keywords/contracting.json').
-    should have_been_made
+      with().
+      should have_been_made
   end
-
   it "should return the correct results" do
     test = SBA.sites_by_keyword("contracting")
     test.should be_a Hash
-    test["recommended_sites_item0"][0]["title"] == "How to Find Contracting Opportunities"
+     test["recommended_sites_item0"][0]["title"] == "How to Find Contracting Opportunities"
   end
 end
+
