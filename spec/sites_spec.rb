@@ -59,3 +59,23 @@ describe ".sites_by_category" do
   end
 end
 
+describe ".sites_by_master_term" do
+  before do
+    stub_request(:get, 'http://api.sba.gov/rec_sites/keywords/master_term/export.json').
+      with().
+      to_return(:body => fixture('rec_sites_master_term.json'),
+                :headers => {'Content-Type' => 'application/json'})
+  end
+  it "should request the correct resource" do
+    SBA.sites_by_master_term("export")
+    a_request(:get, 'http://api.sba.gov/rec_sites/keywords/master_term/export.json').
+      with().
+      should have_been_made
+  end
+  it "should return the correct results" do
+    test = SBA.sites_by_master_term("export")
+    test.should be_a Hash
+     test["recommended_sites_item0"][0]["url"] == "http://www.sba.gov/content/exporting-and-importing"
+  end
+end
+
