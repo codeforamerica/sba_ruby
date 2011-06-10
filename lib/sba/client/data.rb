@@ -54,7 +54,16 @@ module SBA
       def data_specific_city(city, state, options={})
         response = get("geodata/all_data_for_city_of/#{city}/#{state}.json", options)
       end
-      
+
+      # Returns Data for a specific County
+      #
+      # @param county [String]  Input the name of the County
+      # @param state [String]  Input the two leter postal code for state abbreviation.
+      # @param options [Hash] A customizable set of options.
+      # @return {Array}
+      # @see http://www.sba.gov/content/us-city-and-county-web-data-api-city-county-data-all-data-methods
+      # @example
+      #   SBA.data_specific_county("orange county", "ca")
       def data_specific_county(county, state, options={})
         response = get("geodata/all_data_for_county_of/#{county}/#{state}.json", options)
       end
