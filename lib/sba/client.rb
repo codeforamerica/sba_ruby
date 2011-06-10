@@ -1,5 +1,6 @@
 require ::File.expand_path('../client/connection', __FILE__)
 require ::File.expand_path('../client/request', __FILE__)
+require ::File.expand_path('../client/data.rb', __FILE__)
 require ::File.expand_path('../client/loans.rb', __FILE__)
 require ::File.expand_path('../client/licenses.rb', __FILE__)
 require ::File.expand_path('../client/sites.rb', __FILE__)
@@ -18,6 +19,7 @@ module SBA
 
     include SBA::Client::Connection
     include SBA::Client::Request
+    include SBA::Client::Data
     include SBA::Client::Urls
     include SBA::Client::Loans
     include SBA::Client::Licenses
