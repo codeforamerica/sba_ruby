@@ -133,13 +133,13 @@ describe SBA do
                       :headers => {'Content-Type' => 'application/json'})
         end
         it "should request the correct resource" do
-          SBA.business_type_zip("49684")
+          SBA.business_type_zip("restaurant","49684")
           a_request(:get, 'http://api.sba.gov/license_permit/by_zip/restaurant/49684.json').
             with().
             should have_been_made
         end
         it "should return the correct results" do
-          test = SBA.business_type_zip("49684")
+          test = SBA.business_type_zip("restaurant","49684")
           test.should be_an Hash
           test["state_site"][0]["url"].should == "http://www.michigan.gov/uia/0,1607,7-118-26898---,00.html"
           test["state_site"][1]["url"].should == "http://www.michigan.gov/wca/0,1607,7-191-26925---,00.html"
