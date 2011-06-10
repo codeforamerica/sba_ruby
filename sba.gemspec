@@ -17,13 +17,13 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency("faraday_middleware", "~> 0.3.0")
   s.add_runtime_dependency("multi_json", "~> 0.0.5")
   s.add_runtime_dependency("multi_xml", "~> 0.2.0")
-  s.authors = ["Dan Melton", "Erik Michaels-Ober"]
+  s.authors = ["Dan Melton", "Ryan Resella"]
   s.description = %q{A Ruby wrapper for the SBA APIs.}
   s.post_install_message =<<eos
 Using this gem in your project or organization? Add it to the apps wiki!
 https://github.com/codeforamerica/sba/wiki/apps
 eos
-  s.email = ["dan@codeforamerica.org"]
+  s.email = ["dan@codeforamerica.org", "ryan@codeforamerica.org"]
   s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.files = `git ls-files`.split("\n")
   s.homepage = "http://rubygems.org/gems/sba"
