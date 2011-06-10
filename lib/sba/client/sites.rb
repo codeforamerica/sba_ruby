@@ -25,6 +25,10 @@ module SBA
     def sites_by_category(category, options={})
       response = get("rec_sites/category/#{category}.json", options)
     end
+    
+    def sites_by_master_term(term, options={})
+      response = get("rec_sites/keywords/master_term/#{term}.json", options)
+    end
 
     end
   end
