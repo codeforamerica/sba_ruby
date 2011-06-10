@@ -41,7 +41,15 @@ module SBA
       def sites_by_category(category, options={})
         response = get("rec_sites/category/#{category}.json", options)
       end
-    
+
+      # Returns all recommended sites assigned a specific master term.
+      #
+      # @param term [String] A standard search word or phrase assigned to group of synonyms
+      # @param options [Hash] A customizable set of options.
+      # @return {Hash}
+      # @see http://www.sba.gov/about-sba-services/7630#master
+      # @example
+      #   SBA.sites_by_master_term("export")
       def sites_by_master_term(term, options={})
         response = get("rec_sites/keywords/master_term/#{term}.json", options)
       end
