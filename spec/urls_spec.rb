@@ -167,4 +167,22 @@ describe SBA do
       result[1]['county_name'].should == 'Dallas'
     end
   end
+  describe ".all_urls_specific_county" do
+    before do
+      stub_request(:get, 'http://api.sba.gov/geodata/all_links_for_county_of/orange%20county/ca.json').
+        with().
+        to_return(:body => fixture('url_specific_county.json'))
+    end
+    it "should request the correct resource" do
+      SBA.all_urls_specific_county('orange county','ca')
+      a_request(:get, 'http://api.sba.gov/geodata/all_links_for_county_of/orange%20county/ca.json').
+        with().
+        should have_been_made
+    end
+    it "should get the correct data" do
+      result = SBA.all_urls_specific_county('orange county','ca')
+      result[0]['url'].should == 'http://ci.aliso-viejo.ca.us/'
+      result[1]['url'].should == 'http://www.anaheim.net/'
+    end
+  end
 end
