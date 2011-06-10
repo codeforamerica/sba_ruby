@@ -19,7 +19,7 @@ describe SBA, ".all_sites" do
   end
 end
 
-describe ".search_by_keywords" do
+describe ".sites_by_keywords" do
   before do
     stub_request(:get, 'http://api.sba.gov/rec_sites/keywords/contracting.json').
       with().
@@ -36,6 +36,26 @@ describe ".search_by_keywords" do
     test = SBA.sites_by_keyword("contracting")
     test.should be_a Hash
      test["recommended_sites_item0"][0]["title"] == "How to Find Contracting Opportunities"
+  end
+end
+
+describe ".sites_by_category" do
+  before do
+    stub_request(:get, 'http://api.sba.gov/rec_sites/category/managing%20a%20business.json').
+      with().
+      to_return(:body => fixture('rec_sites_categories.json'),
+                :headers => {'Content-Type' => 'application/json'})
+  end
+  it "should request the correct resource" do
+    SBA.sites_by_category("managing a business")
+    a_request(:get, 'http://api.sba.gov/rec_sites/category/managing%20a%20business.json').
+      with().
+      should have_been_made
+  end
+  it "should return the correct results" do
+    test = SBA.sites_by_category("managing a business")
+    test.should be_a Hash
+     test["recommended_sites_item5"][0]["title"] == "Demographics and Population Statistics"
   end
 end
 
