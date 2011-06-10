@@ -81,7 +81,7 @@ module SBA
       #
       # @param business [String] The business parameter includes standard values that allow you to return license and permit information for a specific type of business or for specific employer requirements
       # @param state [String] Input the two letter postal code for the state abbreviation.
-      # @param county [String] Input the name of the county (or its equivalent).  County (or equivalent) name should including the word "county" (or "parish" etc.)  For example, input Orange County, not Orange.
+      # @param city [String] Input the name of the City. 
       # @param options [Hash] A customizable set of options.
       # @return {Hash}
       # @see http://www.sba.gov/content/business-licenses-permits-api-business-type-state-and-city-method
@@ -92,6 +92,15 @@ module SBA
         simplify_response(response)
       end
       
+      # Returns business licenses and permits required for a specific type of business in a specific zip code
+      #
+      # @param business [String] The business parameter includes standard values that allow you to return license and permit information for a specific type of business or for specific employer requirements
+      # @param zip [String] Input a valid five digit zip code.
+      # @param options [Hash] A customizable set of options.
+      # @return {Hash}
+      # @see http://www.sba.gov/content/business-licenses-permits-api-business-type-state-and-city-method
+      # @example
+      #   SBA.business_type_zip("restaurant","94105")
       def business_type_zip(business, zip, options={})
         response = get("license_permit/by_zip/#{business}/#{zip}.json")
         simplify_response(response)
