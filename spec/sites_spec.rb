@@ -79,3 +79,23 @@ describe ".sites_by_master_term" do
   end
 end
 
+describe ".sites_by_domain" do
+  before do
+    stub_request(:get, 'http://api.sba.gov/rec_sites/keywords/domain/irs.json').
+      with().
+      to_return(:body => fixture('rec_sites_domain.json'),
+                :headers => {'Content-Type' => 'application/json'})
+  end
+  it "should request the correct resource" do
+    SBA.sites_by_domain("irs")
+    a_request(:get, 'http://api.sba.gov/rec_sites/keywords/domain/irs.json').
+      with().
+      should have_been_made
+  end
+  it "should return the correct results" do
+    test = SBA.sites_by_domain("irs")
+    test.should be_a Hash
+     test["recommended_sites_item0"][0]["url"] == "http://www.irs.gov/businesses/small/article/0,,id=98277,00.html"
+  end
+end
+
