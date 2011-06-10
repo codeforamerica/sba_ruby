@@ -103,4 +103,25 @@ describe SBA do
          test["state_site"][0]["url"].should == "http://www.edd.ca.gov/Disability/"
        end
      end
+     
+     describe "#business_type_state_city" do
+        before do
+          stub_request(:get, 'http://api.sba.gov/license_permit/state_and_city/restaurant/ny/albany.json').
+            with().
+            to_return(:body => fixture('business_type_state_city.json'),
+                      :headers => {'Content-Type' => 'application/json'})
+        end
+        it "should request the correct resource" do
+          SBA.business_type_state_city("restaurant", "ny", "albany")
+          a_request(:get, 'http://api.sba.gov/license_permit/state_and_city/restaurant/ny/albany.json').
+            with().
+            should have_been_made
+        end
+        it "should return the correct results" do
+          test = SBA.business_type_state_city("restaurant", "ny", "albany")
+          test.should be_an Hash
+          test["state_site"][0]["url"].should == "http://www.wcb.state.ny.us/content/main/DisabilityBenefits/Employer/introToLaw.jsp"
+          test["state_site"][1]["url"].should == "http://www.labor.state.ny.us/ui/dande/register1.shtm"
+        end
+      end
 end
