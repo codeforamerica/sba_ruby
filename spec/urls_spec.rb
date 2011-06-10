@@ -54,7 +54,11 @@ describe SBA do
         with().
         should have_been_made
     end
-    it "should have the correct response"
+    it "should have the correct response" do 
+      test = SBA.all_county_primary_urls_in_state('ks')
+      test.should be_an Array
+      test[0]["url"].should == "http://www.abilenecityhall.com/"
+    end
   end
   describe ".primary_url_for_city" do
     before do
