@@ -1,0 +1,15 @@
+[
+  {"name": "Seattle" ,
+   "fips_county_cd": "33" ,
+   "feat_class": "Populated Place" ,
+   "county_name": "King" ,
+   "primary_latitude": "47.6" ,
+   "state_name": "Washington" ,
+   "url": "http://seattle.gov/" ,
+   "state_abbreviation": "WA" ,
+   "description": null ,
+   "primary_longitude": "-122.33" ,
+   "link_title": null ,
+   "feature_id": 1512650 ,
+   "full_county_name": "King County" ,
+   "fips_class": "C1"}]
