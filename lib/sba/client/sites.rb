@@ -17,6 +17,10 @@ module SBA
       response = get('rec_sites/all_sites/keywords.json', options)
       #simplify_response(response)
     end
+    
+    def sites_by_keyword(keyword, options={})
+      response = get('rec_sites/keywords/contracting.json', options)
+    end
 
 
     end
