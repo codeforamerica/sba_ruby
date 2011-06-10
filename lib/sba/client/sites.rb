@@ -20,16 +20,24 @@ module SBA
     
       # Returns all recommended sites for a specific keyword.
       #
-      # @param keyword [String] A search word or phrase
+      # @param keyword [String] A search word or phrase.
       # @param options [Hash] A customizable set of options.
       # @return {Hash}
       # @see http://www.sba.gov/about-sba-services/7630#keyword
       # @example
-      #   SBA.sites_by_keyword("managing a business")     
+      #   SBA.sites_by_keyword("contracting")     
       def sites_by_keyword(keyword, options={})
         response = get("rec_sites/keywords/#{keyword}.json", options)
       end
-    
+
+      # Returns all recommended sites for a specific category.
+      #
+      # @param category [String] Name of standard category.
+      # @param options [Hash] A customizable set of options.
+      # @return {Hash}
+      # @see http://www.sba.gov/about-sba-services/7630#category
+      # @example
+      #   SBA.sites_by_category("managing a business")    
       def sites_by_category(category, options={})
         response = get("rec_sites/category/#{category}.json", options)
       end
