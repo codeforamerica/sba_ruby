@@ -61,4 +61,23 @@ describe SBA do
       test[1]["url"].should == "http://www.alpinecountyca.gov/"
     end
   end
+  describe ".data_specific_city" do
+    before do
+      stub_request(:get, 'http://api.sba.gov/geodata/all_data_for_city_of/seattle/wa.json').
+        with().
+        to_return(:body => fixture('data_specific_city.json'),
+                  :headers => {'Content-Type' => 'application/json'})
+    end
+    it "should request the correct resource" do
+      SBA.data_specific_city('seattle', 'wa')
+      a_request(:get, 'http://api.sba.gov/geodata/all_data_for_city_of/seattle/wa.json').
+        with().
+        should have_been_made
+    end
+    it "should return the correct results" do
+      test = SBA.data_specific_city('seattle', 'wa')
+      test.should be_an Array
+      test[0]["url"].should == "http://seattle.gov/"
+    end
+  end
 end
