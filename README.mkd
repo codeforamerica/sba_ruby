@@ -12,7 +12,7 @@ Installation
 
 Documentation
 -------------
-[http://rdoc.info/gems/sba_ruby](http://rdoc.info/gems/sba_ruby)
+[http://rdoc.info/gems/sba](http://rdoc.info/gems/sba)
 
 Continuous Integration
 ----------------------
@@ -40,7 +40,7 @@ Here are some ways *you* can contribute:
 * by writing specifications
 * by writing code (**no patch is too small**: fix typos, add comments, clean up inconsistent whitespace)
 * by refactoring code
-* by resolving [issues](http://github.com/cfalabs/sba/issues)
+* by resolving [issues](http://github.com/codeforamerica/sba/issues)
 * by reviewing patches
 
 Submitting an Issue
