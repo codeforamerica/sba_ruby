@@ -16,17 +16,17 @@ Documentation
 
 Continuous Integration
 ----------------------
-[![Build Status](http://travis-ci.org/codeforamerica/sba_ruby.png)](http://travis-ci.org/codeforamerica/sba_ruby)
+[![Build Status](https://travis-ci.org/codeforamerica/sba_ruby.png)](http://travis-ci.org/codeforamerica/sba_ruby)
 
 Usage Examples
 --------------
     require 'sba'
-	
+
 	@client = SBA::Client::New
 	a = @client.all_primary_urls_in_state("ca")
 	a[0]["name"] # =>  "Adelanto"
-	
-    
+
+
 Contributing
 ------------
 In the spirit of [free software](http://www.fsf.org/licensing/essays/free-sw.html), **everyone** is encouraged to help improve this project.
