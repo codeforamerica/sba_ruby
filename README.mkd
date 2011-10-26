@@ -22,7 +22,7 @@ Usage Examples
 --------------
     require 'sba'
 
-	@client = SBA::Client::New
+	@client = SBA::Client.new
 	a = @client.all_primary_urls_in_state("ca")
 	a[0]["name"] # =>  "Adelanto"
 
