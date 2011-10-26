@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "hashie", "~> 1.2"
   s.add_runtime_dependency "faraday", "~> 0.5.3"
   s.add_runtime_dependency "faraday_middleware", "~> 0.3.0"
-  s.add_runtime_dependency "multi_json", "~> 0.0.5"
+  s.add_runtime_dependency "multi_json", "~> 1.0"
   s.add_runtime_dependency "multi_xml", "~> 0.2.0"
   s.authors = ["Dan Melton", "Ryan Resella"]
   s.description = %q{A Ruby wrapper for the SBA APIs.}
